@@ -1,3 +1,10 @@
+/* line 1, ../sass/base/_base.scss */
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: Gotham;
+}
+
 /* line 1, ../sass/modules/_header.scss */
 .header {
   width: 100%;
@@ -32,13 +39,30 @@
 }
 
 /* line 30, ../sass/modules/_header.scss */
-a {
+.headerIcons {
+  margin: 27px;
+}
+/* line 33, ../sass/modules/_header.scss */
+.headerIcons ul {
+  list-style: none;
+}
+/* line 36, ../sass/modules/_header.scss */
+.headerIcons ul li {
+  display: inline;
+  text-align: center;
+  margin: 10px;
+}
+/* line 41, ../sass/modules/_header.scss */
+.headerIcons ul li a {
   text-decoration: none;
   color: #000;
-  padding: 20px 20px;
-  font-size: 18px;
-  height: 20px;
-  width: 20px;
-  background-color: #333;
-  float: left;
+}
+
+/* line 49, ../sass/modules/_header.scss */
+.headerContact {
+  margin: 10px 0px;
+}
+/* line 52, ../sass/modules/_header.scss */
+.headerContact span {
+  padding: 0px 5px;
 }

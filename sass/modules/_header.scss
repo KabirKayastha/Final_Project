@@ -27,17 +27,29 @@
 	border-bottom: 40px solid transparent;
 }
 
-a{
-	text-decoration: none;
-	color: #000;
-	padding: 20px 20px;
-	font-size: 18px;
-	height: 20px;
-	width: 20px;
-	background-color: #333;
-	float: left;
+.headerIcons {
+	margin: 27px;
+
+	ul{
+		list-style: none;
+		
+		li{
+			display: inline;
+			text-align: center;
+			margin: 10px;
+
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+		}
+	}
 }
 
-#icons{
-	
+.headerContact{
+	margin: 10px 0px;
+
+	span{
+		padding: 0px 5px;
+	}
 }
