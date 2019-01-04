@@ -1,0 +1,58 @@
+.hiddenSidebar{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 5%;
+	background-color: #ccc;
+	transition-property: width;
+	transition-duration: .5s;
+	transition-delay: .2s;
+
+	ul{
+		list-style: none;
+		text-align: center;
+
+		li.toggleIcon{
+			position: absolute;
+			left: 20px;
+			top: 5px;
+			height: 30px;
+			width: 30px;
+			padding: 4px 0px;
+			border-radius: 50%;
+			border: 1px solid #000;
+			transition-property: rotate();
+			transition-delay: .2s;
+			transition-duration: .5s;
+		
+			i{
+
+			}
+		}
+
+		li.toggledIcon{
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.sidebar{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 20%;
+	background-color: #ccc;
+}
+
+.body{
+	width: 95%;
+	transition-property: width;
+	transition-duration: .5s;
+	transition-delay: .2s;
+	text-align: justify;
+}
+
+.bodyAfter{
+	width: 80%;
+}
+

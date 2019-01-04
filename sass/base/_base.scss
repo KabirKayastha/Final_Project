@@ -3,3 +3,15 @@
 	outline: none;
 	font-family: Gotham;
 }
+
+
+.body{
+	width: 95%;
+	transition-property: width;
+	transition-duration: .5s;
+	transition-delay: .2s;
+}
+
+.bodyAfter{
+	width: 80%;
+}

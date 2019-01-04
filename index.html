@@ -12,50 +12,46 @@
 <link rel="stylesheet" href="stylesheets/main.css">
 
 <script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/_sidebar.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <body>
+	<!-- sidebar -->
+	<div class="hiddenSidebar">
+		<ul>
+			<li class="toggleIcon">
+				<i class="fas fa-arrow-left arrowLeft"></i>
+			</li>
+		</ul>		
+	</div>
+	<!-- /siderbar -->
 
-	<!-- header -->
-	<div class="header">
-
-		<div class="row">
-			<div class="col-md-4">
-				<span>
-					<div class="topLogo">
-						<img src="img/Citygaon_Logo.png" class="img-responsive logoImg" alt="Logo">
-					</div>
-				</span>
-			</div>
-
-			<div class="col-md-4">
-				<center>
-					<div class="headerContact">
-						<span class="glyphicon glyphicon-earphone"></span> (+977) 01-6612345 <br>
-						<span class="glyphicon glyphicon-envelope"></span> info.blah@company.com <br>
-						<span class="glyphicon glyphicon-map-marker"></span> Suryabinayak, Bhaktapur
-					</div>
-				</center>
-			</div>
-
-			<div class="col-md-4">
-				<div class="headerIcons pull-right">
+	<div class="body">
+		<div class="navBar">
+			<ul>
+				<li id="navLogo"><a href="#"><img src="img/Citygaon_Logo.png" alt="Logo" class="img-responsive"></a></li>
+				<li>Job Seekers
 					<ul>
-						<li>Find Us at:</li>
-						<li><a href="#"><i class="fab fa-facebook-f" id="icons"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter" id="icons"></i></a></li>
-						<li><a href="#"><i class="fab fa-instagram" id="icons"></i></a></li>
+						<li>Job1</li>
+						<li>Job2</li>
+						<li>job3</li>
 					</ul>
-				</div>
-			</div>
+				</li>
+				<li><a href="#">Help Line</a></li>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">Login</a></li>
+				<li>FAQ
+					<ul>
+						<li>FAQ1</li>
+						<li>FAQ2</li>
+						<li>FAQ3</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 	</div>
-	<!-- /header -->
-
-	<!-- navbar -->
 		
-	<!-- /navbar -->
-
 </body>
 </html>
