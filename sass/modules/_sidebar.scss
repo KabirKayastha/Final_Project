@@ -1,9 +1,11 @@
 .hiddenSidebar{
 	position: absolute;
+	top: 0;
 	right: 0;
 	height: 100%;
 	width: 5%;
 	background-color: #ccc;
+	z-index: 99;
 	transition-property: width;
 	transition-duration: .5s;
 	transition-delay: .2s;

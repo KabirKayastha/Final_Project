@@ -5,36 +5,81 @@
   font-family: Gotham;
 }
 
-/* line 8, ../sass/base/_base.scss */
-.body {
-  width: 95%;
-  transition-property: width;
-  transition-duration: .5s;
-  transition-delay: .2s;
+/* line 7, ../sass/base/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-/* line 15, ../sass/base/_base.scss */
-.bodyAfter {
-  width: 80%;
+/* line 1, ../sass/modules/_navbar.scss */
+.navBar {
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  text-align: center;
+}
+/* line 10, ../sass/modules/_navbar.scss */
+.navBar ul {
+  list-style: none;
+  padding: 10px 0;
+}
+/* line 14, ../sass/modules/_navbar.scss */
+.navBar ul li {
+  display: inline;
+  float: left;
+  padding: 20px;
+  width: 150px;
+}
+/* line 20, ../sass/modules/_navbar.scss */
+.navBar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 28, ../sass/modules/_navbar.scss */
+.navImg {
+  width: 120px;
+}
+
+/* line 32, ../sass/modules/_navbar.scss */
+.navBar ul li ul {
+  height: 120px;
+  width: 100%;
+  background-color: red;
+  padding: 0;
+  text-align: center;
+}
+/* line 39, ../sass/modules/_navbar.scss */
+.navBar ul li ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  background-color: #ccc;
+  width: 100%;
 }
 
 /* line 1, ../sass/modules/_sidebar.scss */
 .hiddenSidebar {
   position: absolute;
+  top: 0;
   right: 0;
   height: 100%;
   width: 5%;
   background-color: #ccc;
+  z-index: 99;
   transition-property: width;
   transition-duration: .5s;
   transition-delay: .2s;
 }
-/* line 11, ../sass/modules/_sidebar.scss */
+/* line 13, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul {
   list-style: none;
   text-align: center;
 }
-/* line 15, ../sass/modules/_sidebar.scss */
+/* line 17, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul li.toggleIcon {
   position: absolute;
   left: 20px;
@@ -48,12 +93,12 @@
   transition-delay: .2s;
   transition-duration: .5s;
 }
-/* line 33, ../sass/modules/_sidebar.scss */
+/* line 35, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul li.toggledIcon {
   transform: rotate(180deg);
 }
 
-/* line 39, ../sass/modules/_sidebar.scss */
+/* line 41, ../sass/modules/_sidebar.scss */
 .sidebar {
   position: absolute;
   right: 0;
@@ -62,7 +107,7 @@
   background-color: #ccc;
 }
 
-/* line 47, ../sass/modules/_sidebar.scss */
+/* line 49, ../sass/modules/_sidebar.scss */
 .body {
   width: 95%;
   transition-property: width;
@@ -71,7 +116,7 @@
   text-align: justify;
 }
 
-/* line 55, ../sass/modules/_sidebar.scss */
+/* line 57, ../sass/modules/_sidebar.scss */
 .bodyAfter {
   width: 80%;
 }
