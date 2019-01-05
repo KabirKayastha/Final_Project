@@ -13,64 +13,118 @@ body {
 
 /* line 1, ../sass/modules/_navbar.scss */
 .navBar {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: #333;
-  width: 100%;
-  height: 80px;
+  height: 66px;
   color: #fff;
   text-align: center;
 }
-/* line 10, ../sass/modules/_navbar.scss */
+/* line 9, ../sass/modules/_navbar.scss */
 .navBar ul {
   list-style: none;
-  padding: 10px 0;
+  float: right;
 }
-/* line 14, ../sass/modules/_navbar.scss */
+/* line 13, ../sass/modules/_navbar.scss */
+.navBar ul li.apply {
+  padding: 15px 23px;
+}
+/* line 16, ../sass/modules/_navbar.scss */
+.navBar ul li.apply:hover {
+  background-color: #333;
+}
+/* line 22, ../sass/modules/_navbar.scss */
 .navBar ul li {
+  cursor: pointer;
   display: inline;
   float: left;
-  padding: 20px;
+  padding: 23px;
   width: 150px;
+  text-align: center;
 }
-/* line 20, ../sass/modules/_navbar.scss */
+/* line 30, ../sass/modules/_navbar.scss */
 .navBar ul li a {
   color: #fff;
   text-decoration: none;
 }
+/* line 36, ../sass/modules/_navbar.scss */
+.navBar ul li:hover {
+  background-color: #383838;
+}
 
-/* line 28, ../sass/modules/_navbar.scss */
+/* line 43, ../sass/modules/_navbar.scss */
 .navImg {
+  padding-top: 10px;
   width: 120px;
 }
 
-/* line 32, ../sass/modules/_navbar.scss */
-.navBar ul li ul {
-  height: 120px;
-  width: 100%;
-  background-color: red;
-  padding: 0;
-  text-align: center;
+/* line 48, ../sass/modules/_navbar.scss */
+#navLogo {
+  position: absolute;
+  margin: 0;
+  padding: 0 23px;
+  height: 66px;
+  left: 0;
 }
-/* line 39, ../sass/modules/_navbar.scss */
+/* line 55, ../sass/modules/_navbar.scss */
+#navLogo:hover {
+  background-color: #333;
+}
+
+/* line 61, ../sass/modules/_navbar.scss */
+.navBar ul li ul {
+  background-color: #383838;
+  padding: 0;
+  margin: 22px -58px 0 0;
+  display: none;
+}
+/* line 67, ../sass/modules/_navbar.scss */
 .navBar ul li ul li {
   display: inline-block;
   text-align: center;
+  padding: 15px;
+  background-color: #383838;
+  width: 220px;
+}
+/* line 74, ../sass/modules/_navbar.scss */
+.navBar ul li ul li p {
   padding: 10px;
-  background-color: #ccc;
-  width: 100%;
+  margin-top: 10px;
+  display: none;
+}
+/* line 81, ../sass/modules/_navbar.scss */
+.navBar ul li ul li:hover {
+  background-color: #333;
+}
+
+/* line 86, ../sass/modules/_navbar.scss */
+#faq, #job {
+  height: 66px;
+}
+
+/* line 90, ../sass/modules/_navbar.scss */
+.iconDown1, .iconDown2, .iconDown3 {
+  padding: 0 5px;
+  transition-property: rotate();
+  transition-duration: .5s;
+  transition-delay: .2s;
+}
+
+/* line 97, ../sass/modules/_navbar.scss */
+.iconUp1, .iconUp2, .iconUp3 {
+  transform: rotate(180deg);
 }
 
 /* line 1, ../sass/modules/_sidebar.scss */
 .hiddenSidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100%;
   width: 5%;
-  background-color: #ccc;
+  background-color: #E0E0E0;
   z-index: 99;
-  transition-property: width;
+  transition-property: width, background-color;
   transition-duration: .5s;
   transition-delay: .2s;
 }
@@ -93,22 +147,22 @@ body {
   transition-delay: .2s;
   transition-duration: .5s;
 }
-/* line 35, ../sass/modules/_sidebar.scss */
+/* line 31, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul li.toggledIcon {
   transform: rotate(180deg);
 }
 
-/* line 41, ../sass/modules/_sidebar.scss */
+/* line 37, ../sass/modules/_sidebar.scss */
 .sidebar {
-  position: absolute;
+  position: fixed;
   right: 0;
   height: 100%;
   width: 20%;
   background-color: #ccc;
 }
 
-/* line 49, ../sass/modules/_sidebar.scss */
-.body {
+/* line 45, ../sass/modules/_sidebar.scss */
+.body, .navBar {
   width: 95%;
   transition-property: width;
   transition-duration: .5s;
@@ -116,7 +170,7 @@ body {
   text-align: justify;
 }
 
-/* line 57, ../sass/modules/_sidebar.scss */
-.bodyAfter {
+/* line 53, ../sass/modules/_sidebar.scss */
+.bodyAfter, .navBar-After {
   width: 80%;
 }

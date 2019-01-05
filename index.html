@@ -13,6 +13,7 @@
 
 <script type="text/javascript" src="js/jQuery.js"></script>
 <script type="text/javascript" src="js/_sidebar.js"></script>
+<script type="text/javascript" src="js/_navbar.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -29,28 +30,40 @@
 	<!-- /siderbar -->
 
 	<div class="body">
+		<!-- navbar -->
 		<div class="navBar">
 			<ul>
 				<li id="navLogo"><a href="#"><img src="img/Citygaon_Logo.png" alt="Logo" class="img-responsive navImg"></a></li>
-				<li>Job Seekers
-					<ul>
+
+				<li class="apply"><button class="btn btn-success">Apply Now</button></li>
+				<li class="submenuToggler" id="job">Job Seekers <span><i class="fas fa-caret-down"></i></span>
+					<ul class="submenu" id="jobSubmenu">
 						<li>Job1</li>
 						<li>Job2</li>
 						<li>Job3</li>
 					</ul>
 				</li>
 				<li><a href="#">Help Line</a></li>
-				<li>FAQ
-					<ul>
-						<li>FAQ1</li>
-						<li>FAQ2</li>
-						<li>FAQ3</li>
+				<li class="submenuToggler" id="faq">FAQ <span><i class="fas fa-caret-down"></i></span>
+					<ul class="submenu" id="faqSubmenu">
+						<li id="faqIItoggler1">What is Lorem ipsum?<span><i class="fas fa-caret-down iconDown1" id="down1"></i></span><br>
+							<p id="faqII1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, officia!</p>
+						</li>
+
+						<li id="faqIItoggler2">How it works?<span><i class="fas fa-caret-down iconDown2" id="down2"></i></span><br>
+							<p id="faqII2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, officia!</p>
+						</li>
+
+						<li  id="faqIItoggler3">Where it is situated?<span><i class="fas fa-caret-down iconDown3" id="down3"></i></span><br>
+							<p id="faqII3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, officia!</p>
+						</li>						
 					</ul>
 				</li>
-				<li><a href="#">Register</a></li>
-				<li><a href="#">Login</a></li>
+				<li><a href="#">Register <span><i class="fas fa-user-plus"></i></span></a></li>
+				<li><a href="#">Login <span><i class="fas fa-sign-in-alt"></i></span></a></li>
 			</ul>
 		</div>
+		<!-- /navbar -->
 	</div>
 		
 </body>
