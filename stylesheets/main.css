@@ -5,7 +5,12 @@
   font-family: Gotham;
 }
 
-/* line 7, ../sass/base/_base.scss */
+/* line 6, ../sass/base/_base.scss */
+button {
+  outline: hidden;
+}
+
+/* line 10, ../sass/base/_base.scss */
 body {
   margin: 0;
   padding: 0;
