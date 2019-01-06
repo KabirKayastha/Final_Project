@@ -59,12 +59,32 @@
 						</li>						
 					</ul>
 				</li>
-				<li><a href="#">Register <span><i class="fas fa-user-plus"></i></span></a></li>
-				<li><a href="#">Login <span><i class="fas fa-sign-in-alt"></i></span></a></li>
+				<li data-toggle="modal" data-target="#registerModal">Register <span><i class="fas fa-user-plus"></i></span></li>
+				<li data-toggle="modal" data-target="#loginModal">Login <span><i class="fas fa-sign-in-alt"></i></span></li>
 			</ul>
 		</div>
 		<!-- /navbar -->
 	</div>
+
+	<!-- modal -->	
+	<div id="registerModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">			
+				<!-- modal-content -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+        				
+      				</div>
+				   	<div class="modal-footer">
+				   		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				    </div>
+				</div>
+			</div>
+	</div>
+	<!-- /modal -->
 		
 </body>
 </html>
