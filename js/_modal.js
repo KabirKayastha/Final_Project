@@ -7,12 +7,12 @@ var btn = document.getElementById("modalBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-//var blur = document.getElementById("blured"); 
+var blur = document.getElementById("blured"); 
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
-  //blur.style.filter = "blur(1px)";
+  blur.style.filter = "blur(1px)";
 }
 
 // When the user clicks on <span> (x), close the modal

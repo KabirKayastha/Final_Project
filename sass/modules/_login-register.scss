@@ -1,0 +1,75 @@
+.buttonContainer button{
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid #222;
+	background-color: transparent;
+	color: #000;
+	opacity: .5;
+	padding: 15px;
+	box-sizing: border-box;
+	float: left;
+	outline: none;
+	width: 50%;
+	letter-spacing: 7px;
+	font-weight: bolder;
+	cursor: pointer;
+
+	&:hover{
+		background-color: #fff000;
+	}
+}
+
+.buttonContainer button#signIn{
+	margin-top: 28px;
+}
+
+.buttonContainer button.signIn{
+	border: 1px solid red;
+	border-bottom: none;
+}
+
+.buttonContainer button.signUp{
+	border: 1px solid red;
+	border-bottom: none;
+}
+
+.buttonContainer button#signUp{
+	margin-top: 0px;
+
+}
+
+
+.inputWithIcon input{
+	position: relative;
+	width: 80%;
+	margin: 10px;
+	background-color: #ccc;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	padding-left: 10px;
+
+}
+
+.inputWithIcon{
+	align-items: center;
+	text-align: center;
+}
+
+.eye{
+	position: absolute;
+	cursor: pointer;
+	top: 208px;
+	right: 55px;
+}
+
+.eye-slash{
+	display: none;
+}
+
+#userIcon, #pwIcon{
+	position: relative;
+	top: 20px;
+	left: 12px;
+}

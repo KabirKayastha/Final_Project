@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="stylesheets/main.css">
 
 <body>
-	<div class="out-of-modal">
+	<div class="out-of-modal" id="blured">
 		<!-- sidebar -->
 		<div class="hiddenSidebar">
 			<ul>
@@ -62,55 +62,38 @@
 	</div>
 
 	<!-- modal -->	
-		<!-- <div id="registerModal" class="modal fade" role="dialog">
-			<div class="modal-dialog">			
-				modal-content
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-		
-					<div class="modal-body">
-		        			login
-		        			<form action="">
-		        				<div class="form-group">
-		        					<label for=""></label>
-		        				</div>
-		        			</form>
-		      			</div>
-				</div>
-			</div>
-		</div> -->
-
 	<div class="Modal" id="registerModal">
 		<div class="Modal-content">
 			<span class="close">&times;</span>
 
+    				<div class="buttonContainer">
+						<button onclick="showPanel(0,1)" id="signIn" class="signI">log in</button>
+						<button onclick="showPanel(1,1)" id="signUp" class="signU">Register</button>			
+					</div>
 			<div class="Modal-body">
 				<div class="tabContainer">
-    				<div class="buttonContainer">
-						<button onclick="showPanel(0,1)">sign in</button>
-						<button onclick="showPanel(1,1)">sign up</button>			
-					</div>
 
-					<div class="tabPanel">
+					<div class="tabPanel" id="loginForm">
 						<div class="inputWithIcon">
-						<input type="text" id="username" placeholder="Username">
-						<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-						
-						<input type="password" placeholder="Password" id="password">
-						<i class="fa fa-unlock fa-lg fa-fw" aria-hidden="true"></i>
-						<i class="far fa-eye fa-lg fa-fw pull-right eye" aria-hidden="true" onmousedown="showPassword()"></i>
+							<input type="text" id="username" placeholder="Username">
+							<i class="fa fa-user fa-lg fa-fw pull-left" id="userIcon"></i>
+							
+							<input type="password" placeholder="Password" id="password">
+							<i class="fa fa-unlock fa-lg fa-fw pull-left" id="pwIcon"></i>
+							<i class="far fa-eye fa-lg fa-fw pull-right eye eye-nonSlash" onclick="showPassword()"></i>
+							<i class="far fa-eye-slash fa-lg fa-fw pull-right eye eye-slash" onclick="showPassword()"></i>
 						</div>
+
 					</div>
 
-					<div class="tabPanel">
+					<div class="tabPanel" id="registerForm">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laborum explicabo doloribus, quisquam maiores animi dolorum minus, repellendus dicta delectus, veritatis est ab odit, nesciunt recusandae deleniti deserunt. Ducimus deleniti veritatis cum dolorum nemo, sit praesentium labore odit molestiae dicta ut est quam accusamus rem nostrum repudiandae nulla. Repellendus, soluta.
 					</div>
     			</div>
 			</div>
 		</div>
 	</div>
+	<!-- /modal -->
 
 <script type="text/javascript" src="js/jQuery.js"></script>
 <script type="text/javascript" src="js/_modal.js"></script>

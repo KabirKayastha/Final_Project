@@ -181,9 +181,9 @@ body {
 }
 
 /* The Modal (background) */
-/* line 2, ../sass/modules/_modal-login.scss */
+/* line 2, ../sass/modules/_modal.scss */
 .Modal {
-  display: none;
+  display: block;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
@@ -206,31 +206,37 @@ body {
 }
 
 /* Modal Content */
-/* line 17, ../sass/modules/_modal-login.scss */
+/* line 17, ../sass/modules/_modal.scss */
 .Modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #cccc;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 30%;
   border-radius: 5px;
-  /*   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 4s;
   animation-name: animatetop;
-  animation-duration: 4s */
+  animation-duration: 0.8s;
 }
 
+@keyframes animatetop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* The Close Button */
-/* line 32, ../sass/modules/_modal-login.scss */
+/* line 35, ../sass/modules/_modal.scss */
 .close {
-  color: #aaaaaa;
+  color: #333;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-/* line 39, ../sass/modules/_modal-login.scss */
+/* line 42, ../sass/modules/_modal.scss */
 .close:hover,
 .close:focus {
   color: #000;
@@ -238,23 +244,27 @@ body {
   cursor: pointer;
 }
 
-/* line 46, ../sass/modules/_modal-login.scss */
+/* line 49, ../sass/modules/_modal.scss */
 .Modal-body {
-  margin-top: 50px;
-  height: 300px;
+  margin-top: 80px;
+  padding-top: 10px;
+  height: 200px;
   background-color: #eee;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid red;
+  border-top: none;
 }
 
-/* line 53, ../sass/modules/_modal-login.scss */
+/* line 1, ../sass/modules/_login-register.scss */
 .buttonContainer button {
   text-transform: uppercase;
   border: none;
-  border-bottom: 3px solid #fff;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #222;
   background-color: transparent;
   color: #000;
-  opacity: .9;
-  padding: 20px;
+  opacity: .5;
+  padding: 15px;
   box-sizing: border-box;
   float: left;
   outline: none;
@@ -263,19 +273,67 @@ body {
   font-weight: bolder;
   cursor: pointer;
 }
+/* line 18, ../sass/modules/_login-register.scss */
+.buttonContainer button:hover {
+  background-color: #fff000;
+}
 
-/* line 70, ../sass/modules/_modal-login.scss */
+/* line 23, ../sass/modules/_login-register.scss */
+.buttonContainer button#signIn {
+  margin-top: 28px;
+}
+
+/* line 27, ../sass/modules/_login-register.scss */
+.buttonContainer button.signIn {
+  border: 1px solid red;
+  border-bottom: none;
+}
+
+/* line 32, ../sass/modules/_login-register.scss */
+.buttonContainer button.signUp {
+  border: 1px solid red;
+  border-bottom: none;
+}
+
+/* line 37, ../sass/modules/_login-register.scss */
+.buttonContainer button#signUp {
+  margin-top: 0px;
+}
+
+/* line 43, ../sass/modules/_login-register.scss */
 .inputWithIcon input {
   position: relative;
   width: 80%;
   margin: 10px;
   background-color: #ccc;
-  height: 30px;
+  height: 35px;
   border: none;
+  border-radius: 5px;
+  padding-left: 10px;
 }
 
-/* line 79, ../sass/modules/_modal-login.scss */
+/* line 55, ../sass/modules/_login-register.scss */
 .inputWithIcon {
   align-items: center;
   text-align: center;
+}
+
+/* line 60, ../sass/modules/_login-register.scss */
+.eye {
+  position: absolute;
+  cursor: pointer;
+  top: 208px;
+  right: 55px;
+}
+
+/* line 67, ../sass/modules/_login-register.scss */
+.eye-slash {
+  display: none;
+}
+
+/* line 71, ../sass/modules/_login-register.scss */
+#userIcon, #pwIcon {
+  position: relative;
+  top: 20px;
+  left: 12px;
 }

@@ -1,6 +1,6 @@
 /* The Modal (background) */
 	.Modal {
-	  display: none; /* Hidden by default */
+	  display: block; /* Hidden by default */
 	  position: fixed; /* Stay in place */
 	  z-index: 999; /* Sit on top */
 	  padding-top: 100px; /* Location of the box */
@@ -16,21 +16,24 @@
 /* Modal Content */
 	.Modal-content {
 	  position: relative;
-	  background-color: #fefefe;
+	  background-color: #cccc;
 	  margin: auto;
 	  padding: 20px;
 	  border: 1px solid #888;
 	  width: 30%;
 	  border-radius: 5px;
-	/*   -webkit-animation-name: animatetop;
-	-webkit-animation-duration: 4s;
 	animation-name: animatetop;
-	animation-duration: 4s */
+	animation-duration: .8s
 	}
+
+@keyframes animatetop {
+  from {opacity:0}
+  to {opacity:1}
+}
 
 /* The Close Button */
 	.close {
-	  color: #aaaaaa;
+	  color: #333;
 	  float: right;
 	  font-size: 28px;
 	  font-weight: bold;
@@ -44,39 +47,11 @@
 	}
 
 	.Modal-body{
-		margin-top: 50px;
-		height: 300px;
+		margin-top: 80px;
+		padding-top: 10px;
+		height: 200px;
 		background-color: #eee;
-		border-radius: 5px;
-	}
-
-	.buttonContainer button{
-		  text-transform: uppercase;
-		  border: none;
-		  border-bottom: 3px solid #fff;
-		  background-color: transparent;
-		  color: #000;
-		  opacity: .9;
-		  padding: 20px;
-		  box-sizing: border-box;
-		  float: left;
-		  outline: none;
-		  width: 50%;
-		  letter-spacing: 7px;
-		  font-weight: bolder;
-		  cursor: pointer;
-	}
-
-	.inputWithIcon input{
-		position: relative;
-		width: 80%;
-		margin: 10px;
-		background-color: #ccc;
-		height: 30px;
-		border: none;
-	}
-
-	.inputWithIcon{
-		align-items: center;
-		text-align: center;
+		border-radius: 0 0 5px 5px;
+		border: 1px solid red;
+		border-top: none;
 	}
