@@ -1,6 +1,6 @@
 /* The Modal (background) */
 	.Modal {
-	  display: block; /* Hidden by default */
+	  display: none; /* Hidden by default */
 	  position: fixed; /* Stay in place */
 	  z-index: 999; /* Sit on top */
 	  padding-top: 100px; /* Location of the box */
@@ -48,10 +48,10 @@
 
 	.Modal-body{
 		margin-top: 80px;
-		padding-top: 10px;
-		height: 200px;
+		padding: 10px 0;
+		//height: 250px;
 		background-color: #eee;
 		border-radius: 0 0 5px 5px;
-		border: 1px solid red;
+		//border: 1px solid red;
 		border-top: none;
 	}

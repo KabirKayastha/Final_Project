@@ -2,7 +2,8 @@
 var modal = document.getElementById('registerModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("modalBtn");
+var btn1 = document.getElementById("modalBtn1");
+var btn2 = document.getElementById("modalBtn2");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -10,7 +11,12 @@ var span = document.getElementsByClassName("close")[0];
 var blur = document.getElementById("blured"); 
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+btn1.onclick = function() {
+  modal.style.display = "block";
+  blur.style.filter = "blur(1px)";
+}
+
+btn2.onclick = function() {
   modal.style.display = "block";
   blur.style.filter = "blur(1px)";
 }

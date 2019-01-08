@@ -1,3 +1,4 @@
+//tab switching procedure
 var tabButtons=document.querySelectorAll(".buttonContainer button");
 var tabPanels=document.querySelectorAll(".tabPanel");
 
@@ -8,7 +9,7 @@ function showPanel(panelIndex,opacityAmount) {
 		node.style.color="";
 	});
 	tabButtons[panelIndex].style.opacity=opacityAmount;
-	tabButtons[panelIndex].style.color="blue";
+	tabButtons[panelIndex].style.color="#000";
 	
 	tabPanels.forEach(function(node){
 		node.style.display="NONE"; 
@@ -17,38 +18,50 @@ function showPanel(panelIndex,opacityAmount) {
 	//tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
 
+showPanel(0,1);
+
+
+//Password visibility switching procedure
+	//ids from login form
+	var pw=document.getElementById("password");
+	var eyeSlash = document.getElementById("eye-slash");
+	var eyeShown = document.getElementById("eye-nonSlash");
+
+	//ids from register form
+	var pwReg=document.getElementById("passwordReg");
+	var eyeSlashReg = document.getElementById("eye-slashReg");
+	var eyeShownReg = document.getElementById("eye-nonSlashReg");
+
+//password visibility switch for login form
 function showPassword() {
-	var x=document.getElementById("password");
-	var eyeSlash = document.getElementsByClassName("eye-slash")[0];
-	var eyeShown = document.getElementsByClassName("eye-nonSlash")[0];
-	if (x.type === "password") {
-		x.type = "text";
+	if (pw.type === "password") {
+		pw.type = "text";
 		eyeSlash.style.display = 'inline-block';
 		eyeShown.style.display = 'none';
 	}
 
 	else{
-		x.type = "password";
+		pw.type = "password";
 		eyeSlash.style.display = 'none';	
 		eyeShown.style.display = 'inline-block';
-	}
-	
+		eyeSlashReg.style.display = 'none';	
+		eyeShownReg.style.display = 'inline-block';
+	}		
 }
-showPanel(0,1);
 
-$(document).ready(function() {
-	
-	if( $('#loginForm').css({'display':'block'}) ){
-		$('#signIn').toggleClass('signIn');		
-	};
-		else /*if($('#loginForm').css({'display':'none'}))*/ {
-			$('#signIn').removeClass('signIn');
-		}
+//password visibility switch for register form
+function showPasswordReg() {
+	if (pwReg.type === "password") {
+		pwReg.type = "text";
+		eyeSlashReg.style.display = 'inline-block';
+		eyeShownReg.style.display = 'none';
+	}
 
-	/*if ($('#registerForm').css({'display':'block'})) {
-		$('#signUp').addClass('signUp');
-		$('#signIn').removeClass('signIn');
-	};*/
-});
+	else{
+		pwReg.type = "password";
+		eyeSlashReg.style.display = 'none';	
+		eyeShownReg.style.display = 'inline-block';
+	}		
+}
 
 

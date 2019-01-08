@@ -16,6 +16,17 @@
 			&:hover{
 				background-color: #333;
 			}
+
+			button{
+				background-color: #A0A0A0;
+				border: none;
+				border-radius: 5px;
+				padding: 8px 10px;
+
+				&:hover{
+					background-color: #C0C0C0;
+				}
+			}
 		}
 
 

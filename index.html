@@ -29,7 +29,7 @@
 				<ul>
 					<li id="navLogo"><a href="#"><img src="img/Citygaon_Logo.png" alt="Logo" class="img-responsive navImg"></a></li>
 
-					<li class="apply"><button class="btn btn-success" >Apply Now</button></li>
+					<li class="apply"><button>Apply Now</button></li>
 					<li class="submenuToggler" id="job">Job Seekers <span><i class="fas fa-caret-down"></i></span>
 						<ul class="submenu" id="jobSubmenu">
 							<li>Job1</li>
@@ -53,8 +53,8 @@
 							</li>						
 						</ul>
 					</li>
-					<li id="modalBtn">Register <span><i class="fas fa-user-plus"></i></span></li>
-					<li data-toggle="modal" data-target="#registerModal">Login <span><i class="fas fa-sign-in-alt"></i></span></li>
+					<li id="modalBtn1">Register <span><i class="fas fa-user-plus"></i></span></li>
+					<li id="modalBtn2">Login <span><i class="fas fa-sign-in-alt"></i></span></li>
 				</ul>
 			</div>
 			<!-- /navbar -->
@@ -80,14 +80,71 @@
 							
 							<input type="password" placeholder="Password" id="password">
 							<i class="fa fa-unlock fa-lg fa-fw pull-left" id="pwIcon"></i>
-							<i class="far fa-eye fa-lg fa-fw pull-right eye eye-nonSlash" onclick="showPassword()"></i>
-							<i class="far fa-eye-slash fa-lg fa-fw pull-right eye eye-slash" onclick="showPassword()"></i>
+							<i class="far fa-eye fa-lg fa-fw pull-right eye eye-nonSlash" id="eye-nonSlash" onclick="showPassword()"></i>
+							<i class="far fa-eye-slash fa-lg fa-fw pull-right eye eye-slash" id="eye-slash" onclick="showPassword()"></i>
 						</div>
+					
+						<center><button><a href="#">enter</a></button></center>
+						<center><p class="privacy">By signing in you agree <a href="#">Terms &amp Privacy Policy</a></p></center>
+						
+						<center>
+						<div class="use">
+							<div class="row">
+								<div class="col-md-3">
+									<p>Or Use:</p>
+								</div>
+								<div class="col-md-3">
+									<a href="#"><i class="fab fa-facebook-f fb regIcon"></i></a>
+								</div>
+								<div class="col-md-3">
+									<a href="#"><i class="fab fa-twitter tw regIcon"></i></a>
+								</div>
+								<div class="col-md-3">
+									<a href="#"><i class="fab fa-google go regIcon"></i></a>
+								</div>
+
+							</div>
+						</div>
+						</center>
 
 					</div>
 
 					<div class="tabPanel" id="registerForm">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laborum explicabo doloribus, quisquam maiores animi dolorum minus, repellendus dicta delectus, veritatis est ab odit, nesciunt recusandae deleniti deserunt. Ducimus deleniti veritatis cum dolorum nemo, sit praesentium labore odit molestiae dicta ut est quam accusamus rem nostrum repudiandae nulla. Repellendus, soluta.
+						<div class="inputWithIcon">
+							<input type="email" id="email" placeholder="Email Address" style="margin-top: 30px;">
+							<i class="fas fa-at fa-lg fa-fw pull-left" id="emailIcon"></i>
+
+							<input type="text" id="username" placeholder="Username">
+							<i class="fa fa-user fa-lg fa-fw pull-left" id="userIcon"></i>
+							
+							<input type="password" placeholder="Password" id="passwordReg">
+							<i class="fa fa-unlock fa-lg fa-fw pull-left" id="pwIcon"></i>
+							<i class="far fa-eye fa-lg fa-fw pull-right eyeReg eye-nonSlash" id="eye-nonSlashReg" onclick="showPasswordReg()"></i>
+							<i class="far fa-eye-slash fa-lg fa-fw pull-right eyeReg eye-slash" id="eye-slashReg" onclick="showPasswordReg()"></i>
+						</div>
+					
+						<center><button><a href="#">sign up</a></button></center>
+						<center><p class="privacy">By signing up you agree <a href="#">Terms &amp Privacy Policy</a></p></center>
+						
+						<center>
+						<div class="use">
+							<div class="row">
+								<div class="col-md-3">
+									<p>Or Use:</p>
+								</div>
+								<div class="col-md-3">
+									<a href="#"><i class="fab fa-facebook-f fb regIcon"></i></a>
+								</div>
+								<div class="col-md-3">
+									<a href="#"><i class="fab fa-twitter tw regIcon"></i></a>
+								</div>
+								<div class="col-md-3">
+									<a href="#"><i class="fab fa-google go regIcon"></i></a>
+								</div>
+
+							</div>
+						</div>
+						</center>
 					</div>
     			</div>
 			</div>

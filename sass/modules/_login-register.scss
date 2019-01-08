@@ -2,8 +2,8 @@
 	text-transform: uppercase;
 	border: none;
 	border-radius: 5px 5px 0 0;
-	border-bottom: 1px solid #222;
-	background-color: transparent;
+	//border-bottom: 1px solid #222;
+	background-color: #eee;
 	color: #000;
 	opacity: .5;
 	padding: 15px;
@@ -14,31 +14,16 @@
 	letter-spacing: 7px;
 	font-weight: bolder;
 	cursor: pointer;
-
-	&:hover{
-		background-color: #fff000;
-	}
 }
 
 .buttonContainer button#signIn{
-	margin-top: 28px;
-}
-
-.buttonContainer button.signIn{
-	border: 1px solid red;
-	border-bottom: none;
-}
-
-.buttonContainer button.signUp{
-	border: 1px solid red;
-	border-bottom: none;
+	margin-top: 30px;
 }
 
 .buttonContainer button#signUp{
-	margin-top: 0px;
+	margin-top: 2px;
 
 }
-
 
 .inputWithIcon input{
 	position: relative;
@@ -49,7 +34,6 @@
 	border: none;
 	border-radius: 5px;
 	padding-left: 10px;
-
 }
 
 .inputWithIcon{
@@ -60,7 +44,14 @@
 .eye{
 	position: absolute;
 	cursor: pointer;
-	top: 208px;
+	top: 186px;
+	right: 55px;
+}
+
+.eyeReg{
+	position: absolute;
+	cursor: pointer;
+	top: 261px;
 	right: 55px;
 }
 
@@ -72,4 +63,82 @@
 	position: relative;
 	top: 20px;
 	left: 12px;
+}
+
+#emailIcon{
+	position: relative;
+	top: 42px;
+	left: 12px;
+}
+
+.tabPanel button {
+  margin: 10px 0 0 0;
+  width: 25%;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0;
+  text-align: center;
+  background-color: #ccc;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+  &:hover{
+  	background-color: #E0E0E0;
+  }
+	
+	a{
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+.tabPanel {
+	p{
+		margin: 10px 0;
+		font-size: 10px;
+	}
+
+	.use{
+		padding: 5px;
+
+		p{
+			font-size: 13px;
+			margin-left: 10px;
+			font-weight: bolder;
+		}
+	
+		a{	
+			text-decoration: none;
+			color: #000;
+
+			.fb, .tw, .go{
+				transition-property: background-color, color;
+				transition-duration: .5s;
+				transition-delay: 0s;
+			}
+
+			.fb:hover{
+				background-color: rgb(67, 118, 181);
+			}
+
+			.tw:hover{
+				background-color: rgb(65, 173, 218);
+			}
+
+			.go:hover{
+				background-color: rgb(50, 50, 50);
+				color: #fff;
+			}
+
+			.regIcon{
+				height: 30px;
+				width: 30px;
+				border-radius: 50%;
+				background-color: #878787;
+				padding-top: 8px;
+			} 
+		}
+	}
 }

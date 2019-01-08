@@ -38,7 +38,18 @@ body {
 .navBar ul li.apply:hover {
   background-color: #333;
 }
-/* line 22, ../sass/modules/_navbar.scss */
+/* line 20, ../sass/modules/_navbar.scss */
+.navBar ul li.apply button {
+  background-color: #A0A0A0;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+/* line 26, ../sass/modules/_navbar.scss */
+.navBar ul li.apply button:hover {
+  background-color: #C0C0C0;
+}
+/* line 33, ../sass/modules/_navbar.scss */
 .navBar ul li {
   cursor: pointer;
   display: inline;
@@ -47,23 +58,23 @@ body {
   width: 150px;
   text-align: center;
 }
-/* line 30, ../sass/modules/_navbar.scss */
+/* line 41, ../sass/modules/_navbar.scss */
 .navBar ul li a {
   color: #fff;
   text-decoration: none;
 }
-/* line 36, ../sass/modules/_navbar.scss */
+/* line 47, ../sass/modules/_navbar.scss */
 .navBar ul li:hover {
   background-color: #383838;
 }
 
-/* line 43, ../sass/modules/_navbar.scss */
+/* line 54, ../sass/modules/_navbar.scss */
 .navImg {
   padding-top: 10px;
   width: 120px;
 }
 
-/* line 48, ../sass/modules/_navbar.scss */
+/* line 59, ../sass/modules/_navbar.scss */
 #navLogo {
   position: absolute;
   margin: 0;
@@ -71,19 +82,19 @@ body {
   height: 66px;
   left: 0;
 }
-/* line 55, ../sass/modules/_navbar.scss */
+/* line 66, ../sass/modules/_navbar.scss */
 #navLogo:hover {
   background-color: #333;
 }
 
-/* line 61, ../sass/modules/_navbar.scss */
+/* line 72, ../sass/modules/_navbar.scss */
 .navBar ul li ul {
   background-color: #383838;
   padding: 0;
   margin: 22px -58px 0 0;
   display: none;
 }
-/* line 67, ../sass/modules/_navbar.scss */
+/* line 78, ../sass/modules/_navbar.scss */
 .navBar ul li ul li {
   display: inline-block;
   text-align: center;
@@ -91,23 +102,23 @@ body {
   background-color: #383838;
   width: 220px;
 }
-/* line 74, ../sass/modules/_navbar.scss */
+/* line 85, ../sass/modules/_navbar.scss */
 .navBar ul li ul li p {
   padding: 10px;
   margin-top: 10px;
   display: none;
 }
-/* line 81, ../sass/modules/_navbar.scss */
+/* line 92, ../sass/modules/_navbar.scss */
 .navBar ul li ul li:hover {
   background-color: #333;
 }
 
-/* line 86, ../sass/modules/_navbar.scss */
+/* line 97, ../sass/modules/_navbar.scss */
 #faq, #job {
   height: 66px;
 }
 
-/* line 90, ../sass/modules/_navbar.scss */
+/* line 101, ../sass/modules/_navbar.scss */
 .iconDown1, .iconDown2, .iconDown3 {
   padding: 0 5px;
   transition-property: rotate();
@@ -115,7 +126,7 @@ body {
   transition-delay: .2s;
 }
 
-/* line 97, ../sass/modules/_navbar.scss */
+/* line 108, ../sass/modules/_navbar.scss */
 .iconUp1, .iconUp2, .iconUp3 {
   transform: rotate(180deg);
 }
@@ -183,7 +194,7 @@ body {
 /* The Modal (background) */
 /* line 2, ../sass/modules/_modal.scss */
 .Modal {
-  display: block;
+  display: none;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
@@ -247,11 +258,9 @@ body {
 /* line 49, ../sass/modules/_modal.scss */
 .Modal-body {
   margin-top: 80px;
-  padding-top: 10px;
-  height: 200px;
+  padding: 10px 0;
   background-color: #eee;
   border-radius: 0 0 5px 5px;
-  border: 1px solid red;
   border-top: none;
 }
 
@@ -260,8 +269,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 5px 5px 0 0;
-  border-bottom: 1px solid #222;
-  background-color: transparent;
+  background-color: #eee;
   color: #000;
   opacity: .5;
   padding: 15px;
@@ -273,34 +281,18 @@ body {
   font-weight: bolder;
   cursor: pointer;
 }
-/* line 18, ../sass/modules/_login-register.scss */
-.buttonContainer button:hover {
-  background-color: #fff000;
+
+/* line 19, ../sass/modules/_login-register.scss */
+.buttonContainer button#signIn {
+  margin-top: 30px;
 }
 
 /* line 23, ../sass/modules/_login-register.scss */
-.buttonContainer button#signIn {
-  margin-top: 28px;
-}
-
-/* line 27, ../sass/modules/_login-register.scss */
-.buttonContainer button.signIn {
-  border: 1px solid red;
-  border-bottom: none;
-}
-
-/* line 32, ../sass/modules/_login-register.scss */
-.buttonContainer button.signUp {
-  border: 1px solid red;
-  border-bottom: none;
-}
-
-/* line 37, ../sass/modules/_login-register.scss */
 .buttonContainer button#signUp {
-  margin-top: 0px;
+  margin-top: 2px;
 }
 
-/* line 43, ../sass/modules/_login-register.scss */
+/* line 28, ../sass/modules/_login-register.scss */
 .inputWithIcon input {
   position: relative;
   width: 80%;
@@ -312,28 +304,115 @@ body {
   padding-left: 10px;
 }
 
-/* line 55, ../sass/modules/_login-register.scss */
+/* line 39, ../sass/modules/_login-register.scss */
 .inputWithIcon {
   align-items: center;
   text-align: center;
 }
 
-/* line 60, ../sass/modules/_login-register.scss */
+/* line 44, ../sass/modules/_login-register.scss */
 .eye {
   position: absolute;
   cursor: pointer;
-  top: 208px;
+  top: 186px;
   right: 55px;
 }
 
-/* line 67, ../sass/modules/_login-register.scss */
+/* line 51, ../sass/modules/_login-register.scss */
+.eyeReg {
+  position: absolute;
+  cursor: pointer;
+  top: 261px;
+  right: 55px;
+}
+
+/* line 58, ../sass/modules/_login-register.scss */
 .eye-slash {
   display: none;
 }
 
-/* line 71, ../sass/modules/_login-register.scss */
+/* line 62, ../sass/modules/_login-register.scss */
 #userIcon, #pwIcon {
   position: relative;
   top: 20px;
   left: 12px;
+}
+
+/* line 68, ../sass/modules/_login-register.scss */
+#emailIcon {
+  position: relative;
+  top: 42px;
+  left: 12px;
+}
+
+/* line 74, ../sass/modules/_login-register.scss */
+.tabPanel button {
+  margin: 10px 0 0 0;
+  width: 25%;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0;
+  text-align: center;
+  background-color: #ccc;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+/* line 87, ../sass/modules/_login-register.scss */
+.tabPanel button:hover {
+  background-color: #E0E0E0;
+}
+/* line 91, ../sass/modules/_login-register.scss */
+.tabPanel button a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 98, ../sass/modules/_login-register.scss */
+.tabPanel p {
+  margin: 10px 0;
+  font-size: 10px;
+}
+/* line 103, ../sass/modules/_login-register.scss */
+.tabPanel .use {
+  padding: 5px;
+}
+/* line 106, ../sass/modules/_login-register.scss */
+.tabPanel .use p {
+  font-size: 13px;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+/* line 112, ../sass/modules/_login-register.scss */
+.tabPanel .use a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 116, ../sass/modules/_login-register.scss */
+.tabPanel .use a .fb, .tabPanel .use a .tw, .tabPanel .use a .go {
+  transition-property: background-color, color;
+  transition-duration: .5s;
+  transition-delay: 0s;
+}
+/* line 122, ../sass/modules/_login-register.scss */
+.tabPanel .use a .fb:hover {
+  background-color: #4376b5;
+}
+/* line 126, ../sass/modules/_login-register.scss */
+.tabPanel .use a .tw:hover {
+  background-color: #41adda;
+}
+/* line 130, ../sass/modules/_login-register.scss */
+.tabPanel .use a .go:hover {
+  background-color: #323232;
+  color: #fff;
+}
+/* line 135, ../sass/modules/_login-register.scss */
+.tabPanel .use a .regIcon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #878787;
+  padding-top: 8px;
 }
