@@ -5,9 +5,9 @@ $(document).ready(function(){
 		$('.body').toggleClass('bodyAfter');
 		$('.navBar').toggleClass('navBar-After');
 		$('.toggleIcon').toggleClass('toggledIcon');
+		$('.hiddenSidebar-content').toggleClass('shownSidebar-content');
 	});
 
-	/*$('#job').hover(function(){
-		$('#jobSubmenu').slideToggle('slow/400/fast');
-	});*/
+	
 });
+

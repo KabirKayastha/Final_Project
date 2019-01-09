@@ -18,6 +18,10 @@ function showPanel(panelIndex,opacityAmount) {
 	//tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
 
+var btn1 = document.getElementById("modalBtn1");
+var btn2 = document.getElementById("modalBtn2");
+
+
 showPanel(0,1);
 
 

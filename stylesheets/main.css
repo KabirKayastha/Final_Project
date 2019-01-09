@@ -84,7 +84,7 @@ body {
 }
 /* line 66, ../sass/modules/_navbar.scss */
 #navLogo:hover {
-  background-color: #333;
+  background-color: transparent;
 }
 
 /* line 72, ../sass/modules/_navbar.scss */
@@ -138,7 +138,7 @@ body {
   right: 0;
   height: 100%;
   width: 5%;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   z-index: 99;
   transition-property: width, background-color;
   transition-duration: .5s;
@@ -154,6 +154,7 @@ body {
   position: absolute;
   left: 20px;
   top: 5px;
+  cursor: pointer;
   height: 30px;
   width: 30px;
   padding: 4px 0px;
@@ -163,21 +164,136 @@ body {
   transition-delay: .2s;
   transition-duration: .5s;
 }
-/* line 31, ../sass/modules/_sidebar.scss */
+/* line 32, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul li.toggledIcon {
   transform: rotate(180deg);
 }
-
 /* line 37, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content {
+  position: relative;
+  left: 999px;
+  margin-top: 50px;
+  transition-property: left;
+  transition-delay: .2s;
+  transition-duration: .8s;
+}
+/* line 45, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .marquee {
+  margin: 0;
+}
+/* line 48, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .marquee p {
+  padding: 0 0 0 5px;
+  margin: 0 0 0 7px;
+  background-color: #A8A8A8;
+  width: 115px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+/* line 56, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .marquee p::after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 137px;
+  border-left: 20px solid #a8a8a8;
+  border-top: 20px solid transparent;
+}
+/* line 67, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .marquee marquee {
+  background-color: #e0e0e0;
+  width: 20%;
+  margin-left: 7px;
+  margin-right: 7px;
+  padding-top: 7px;
+}
+/* line 75, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .marquee marquee ol li {
+  display: inline;
+  margin: 20px;
+}
+/* line 85, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .content ul {
+  background-color: transparent;
+  position: absolute;
+  width: 20%;
+  margin: 20px 7px 10px 5px;
+  align-items: center;
+  padding: 0;
+}
+/* line 93, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .content ul li {
+  background-color: #aaaaaa;
+  margin-bottom: 20px;
+  padding: 5px 20px 20px 20px;
+  border-radius: 5px;
+}
+/* line 99, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .content ul li .content-header {
+  width: 95%;
+  background-color: #ccc;
+  margin: 5px auto 20px auto;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+/* line 106, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .content ul li .content-header h3 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* line 114, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .content ul li .content-body button {
+  margin-top: 15px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+/* line 121, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .content ul li .content-body button:hover {
+  background-color: #D6D6D6;
+}
+/* line 128, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .content ul li:last-child {
+  margin-bottom: 10px;
+}
+/* line 135, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .shownSidebar-content {
+  position: relative;
+  left: 0px;
+}
+
+/* line 143, ../sass/modules/_sidebar.scss */
 .sidebar {
   position: fixed;
   right: 0;
   height: 100%;
   width: 20%;
   background-color: #ccc;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* line 152, ../sass/modules/_sidebar.scss */
+.sidebar::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent;
+}
+/* line 157, ../sass/modules/_sidebar.scss */
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 3px;
+}
+/* line 163, ../sass/modules/_sidebar.scss */
+.sidebar:hover::-webkit-scrollbar {
+  background-color: #ccc;
+}
+/* line 167, ../sass/modules/_sidebar.scss */
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #aaa;
 }
 
-/* line 45, ../sass/modules/_sidebar.scss */
+/* line 175, ../sass/modules/_sidebar.scss */
 .body, .navBar {
   width: 95%;
   transition-property: width;
@@ -186,7 +302,7 @@ body {
   text-align: justify;
 }
 
-/* line 53, ../sass/modules/_sidebar.scss */
+/* line 183, ../sass/modules/_sidebar.scss */
 .bodyAfter, .navBar-After {
   width: 80%;
 }
@@ -226,11 +342,11 @@ body {
   border: 1px solid #888;
   width: 30%;
   border-radius: 5px;
-  animation-name: animatetop;
+  animation-name: fadeIn;
   animation-duration: 0.8s;
 }
 
-@keyframes animatetop {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
