@@ -4,7 +4,7 @@
 	right: 0;
 	height: 100%;
 	width: 5%;
-	background-color: #e0e0e0;
+	background-color: #ccc;
 	z-index: 99;
 	transition-property: width, background-color;
 	transition-duration: .5s;
@@ -16,17 +16,24 @@
 
 		li.toggleIcon{
 			position: absolute;
-			left: 20px;
+			left: 25px;
 			top: 15px;
 			cursor: pointer;
 			height: 30px;
 			width: 30px;
 			padding: 4px 0px;
 			border-radius: 50%;
-			border: 1px solid #000;
+			border: 1px solid rgba(60,60,60,1);
+			color: rgba(60,60,60,1);
+
 			transition-property: rotate();
 			transition-delay: .2s;
 			transition-duration: .5s;
+
+			&:hover{
+				color: rgba(0,0,0,1);
+				border: 1px solid rgba(0,0,0,1);
+			}
 		}
 
 		li.toggledIcon{
@@ -81,14 +88,39 @@
 		}
 		
 		.content{
-				
+
 			ul{
 				background-color: transparent;
 				position: absolute;
 				width: 20%;
-				margin: 25px 7px 10px 5px;
+				height: 75vh;
+				margin: 25px 0px 10px 15px;
 				align-items: center;
 				padding: 0;
+				padding-right: 10px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				display: block;
+
+				&::-webkit-scrollbar{
+					width: 7px;
+					background-color: transparent;
+				}
+	
+				&::-webkit-scrollbar-thumb{
+					background-color: transparent;
+					border-radius: 3px;
+				}
+
+				&:hover{
+					&::-webkit-scrollbar{
+						background-color: #ccc;
+					}
+
+					&::-webkit-scrollbar-thumb{
+						background-color: #aaa;
+					}
+				}
 
 				li{
 					background-color: #aaaaaa;
@@ -146,28 +178,6 @@
 	height: 100%;
 	width: 20%;
 	background-color: #ccc;
-	overflow-y: scroll;
-	overflow-x: hidden;
-
-	&::-webkit-scrollbar{
-		width: 7px;
-		background-color: transparent;
-	}
-	
-	&::-webkit-scrollbar-thumb{
-		background-color: transparent;
-		border-radius: 3px;
-	}
-
-	&:hover{
-		&::-webkit-scrollbar{
-			background-color: #ccc;
-		}
-
-		&::-webkit-scrollbar-thumb{
-			background-color: #aaa;
-		}
-	}
 }
 
 

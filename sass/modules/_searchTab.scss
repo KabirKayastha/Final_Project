@@ -1,0 +1,87 @@
+span.search-tab{
+	//height: 100px;
+	width: 500px;
+	position: absolute;
+	bottom: 10px;
+	left: 30%;
+	padding: 10px;
+	background-color: rgba(158,158,158,.6);
+	border-radius: 10px;
+	z-index: 99;
+
+	.searchBtns{
+		display: flex;	
+
+		input[type="button"], button{
+			float: left;
+			height: 35px;
+			border: none;
+		}
+
+		input[type="button"]{
+			border-top-left-radius: 5px;
+			padding: 0 10px;
+			cursor: default;
+			letter-spacing: 1px;
+			background: #ccc;
+			color: rgba(0,0,0,.8);
+		}
+
+		button{
+			padding: 0 10px;
+			width: 80px;
+			background-color: #ccc;
+			//border-radius: 5px 5px 0 0;
+			//opacity: .5;
+		}
+
+		#searchJob{
+		}
+
+		#searchContract{
+			width: 90px;
+			border-top-right-radius: 5px;
+		}
+	}
+
+	.searchPanel{
+		height: 50px;
+		padding: 10px;
+		width: 100%;
+		background-color: #aaa;
+		display: block;
+		border-radius: 0 5px 5px 5px;
+
+		input{
+			height: 30px;
+			border: none;
+			border-radius: 15px;
+			padding-left: 15px; 
+		}
+
+		button{
+			height: 30px;
+			width: 30px;
+			border: none;
+			border-radius: 50%;
+			background-color: #ccc;
+			margin-left: 20px;
+			
+			transition-property: background-color, border-radius;
+			transition-duration: .3s;
+
+			&:hover{
+				background-color: #e0e0e0;
+				border-radius: 50% 50%  50% 5px;
+			}
+		}
+
+		.searchTitle{
+			width: 230px;
+		}
+
+		.searchArea{
+			margin-left: 35px;
+		}
+	}
+}
