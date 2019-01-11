@@ -5,6 +5,7 @@ $(document).ready(function(){
 		$('.body').toggleClass('bodyAfter');
 		$('.navBar').toggleClass('navBar-After');
 		$('.toggleIcon').toggleClass('toggledIcon');
+		$('.searchBtn').toggleClass('searchBtn-After');
 		$('.hiddenSidebar-content').toggleClass('shownSidebar-content');
 	});
 

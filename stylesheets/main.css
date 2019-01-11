@@ -568,82 +568,84 @@ section.behind-Navbar {
 
 /* line 1, ../sass/modules/_searchTab.scss */
 span.search-tab {
-  width: 500px;
-  position: absolute;
-  bottom: 10px;
-  left: 30%;
+  width: 60%;
+  position: relative;
+  bottom: 125px;
+  margin: auto;
+  display: block;
   padding: 10px;
   background-color: rgba(158, 158, 158, 0.6);
   border-radius: 10px;
   z-index: 99;
 }
 /* line 12, ../sass/modules/_searchTab.scss */
-span.search-tab .searchBtns {
+span.search-tab .searchTabBtns {
   display: flex;
 }
 /* line 15, ../sass/modules/_searchTab.scss */
-span.search-tab .searchBtns input[type="button"], span.search-tab .searchBtns button {
+span.search-tab .searchTabBtns button {
   float: left;
-  height: 35px;
+  height: 45px;
   border: none;
-}
-/* line 21, ../sass/modules/_searchTab.scss */
-span.search-tab .searchBtns input[type="button"] {
-  border-top-left-radius: 5px;
   padding: 0 10px;
-  cursor: default;
-  letter-spacing: 1px;
-  background: #ccc;
-  color: rgba(0, 0, 0, 0.8);
+  width: 120px;
+  background-color: #aaa;
+  border-radius: 5px 5px 0 0;
 }
-/* line 30, ../sass/modules/_searchTab.scss */
-span.search-tab .searchBtns button {
-  padding: 0 10px;
-  width: 80px;
-  background-color: #ccc;
-}
-/* line 41, ../sass/modules/_searchTab.scss */
-span.search-tab .searchBtns #searchContract {
-  width: 90px;
-  border-top-right-radius: 5px;
-}
-/* line 47, ../sass/modules/_searchTab.scss */
+/* line 26, ../sass/modules/_searchTab.scss */
 span.search-tab .searchPanel {
   height: 50px;
-  padding: 10px;
+  padding: 10px 5px 10px 10px;
   width: 100%;
-  background-color: #aaa;
-  display: block;
+  background-color: #ccc;
+  display: flex;
   border-radius: 0 5px 5px 5px;
 }
-/* line 55, ../sass/modules/_searchTab.scss */
+/* line 34, ../sass/modules/_searchTab.scss */
 span.search-tab .searchPanel input {
+  width: 30%;
   height: 30px;
   border: none;
   border-radius: 15px;
   padding-left: 15px;
+  margin-left: 2px;
 }
-/* line 62, ../sass/modules/_searchTab.scss */
+/* line 43, ../sass/modules/_searchTab.scss */
 span.search-tab .searchPanel button {
   height: 30px;
   width: 30px;
   border: none;
   border-radius: 50%;
-  background-color: #ccc;
-  margin-left: 20px;
-  transition-property: background-color, border-radius;
-  transition-duration: .3s;
+  background-color: #aaa;
+  margin-left: 2%;
+  transition: margin-left .5s .2s, background-color .3s, border-radius .3s;
 }
-/* line 73, ../sass/modules/_searchTab.scss */
+/* line 52, ../sass/modules/_searchTab.scss */
 span.search-tab .searchPanel button:hover {
   background-color: #e0e0e0;
   border-radius: 50% 50%  50% 5px;
 }
-/* line 79, ../sass/modules/_searchTab.scss */
-span.search-tab .searchPanel .searchTitle {
-  width: 230px;
+/* line 58, ../sass/modules/_searchTab.scss */
+span.search-tab .searchPanel .searchBtn-After {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #aaa;
+  margin-left: 1%;
 }
-/* line 83, ../sass/modules/_searchTab.scss */
-span.search-tab .searchPanel .searchArea {
-  margin-left: 35px;
+/* line 69, ../sass/modules/_searchTab.scss */
+span.search-tab .searchPanel select {
+  height: 30px;
+  width: 30%;
+  border: none;
+  border-radius: 15px;
+  padding: 0 15px;
+  margin-left: 2px;
+}
+/* line 77, ../sass/modules/_searchTab.scss */
+span.search-tab .searchPanel select option {
+  background-color: red;
+  height: 40px;
+  border: none;
 }
