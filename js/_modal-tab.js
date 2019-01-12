@@ -22,7 +22,3 @@ showPanel(0,1);
 var btn1 = document.getElementById("modalBtnReg");
 var btn2 = document.getElementById("modalBtnLog");
 
-
-
-
-

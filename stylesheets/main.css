@@ -649,3 +649,88 @@ span.search-tab .searchPanel select option {
   height: 40px;
   border: none;
 }
+
+/* line 1, ../sass/modules/_newsSlider.scss */
+.newsSlider {
+  width: 100%;
+  height: 30vh;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+/* line 10, ../sass/modules/_newsSlider.scss */
+.newsSlider button {
+  height: 100%;
+  width: 100px;
+  z-index: 9;
+  position: absolute;
+  border: none;
+  color: rgba(150, 150, 150, 0.7);
+  font-size: 30px;
+}
+/* line 21, ../sass/modules/_newsSlider.scss */
+.newsSlider #right-newsSlider {
+  position: absolute;
+  right: 0;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+}
+/* line 26, ../sass/modules/_newsSlider.scss */
+.newsSlider #right-newsSlider:hover {
+  color: #969696;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+}
+/* line 33, ../sass/modules/_newsSlider.scss */
+.newsSlider #left-newsSlider {
+  position: absolute;
+  left: 0;
+  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.5));
+}
+/* line 38, ../sass/modules/_newsSlider.scss */
+.newsSlider #left-newsSlider:hover {
+  color: #969696;
+  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+}
+/* line 44, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer {
+  width: 400%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  margin: 0;
+  transition: .5s ease-in-out;
+  background-color: pink;
+}
+/* line 53, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+/* line 59, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li {
+  position: relative;
+  width: 9%;
+  height: 25vh;
+  float: left;
+  margin: 15px auto;
+  background-color: yellow;
+  padding: 10px;
+}
+/* line 69, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li:nth-child(1) {
+  background-color: blue;
+  margin-left: 50px;
+}
+/* line 73, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li:nth-child(2) {
+  background-color: orange;
+}
+/* line 76, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li:nth-child(3) {
+  background-color: green;
+}
+/* line 79, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li:last-child {
+  background-color: gray;
+}
