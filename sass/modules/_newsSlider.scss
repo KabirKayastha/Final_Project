@@ -1,26 +1,24 @@
-.newsSlider{
-	width: 100%;
+.left-right-button{
 	height: 30vh;
-	background-color: red;
-	position: relative;
-	overflow: hidden;
-
-	
+	//width: 95%;
+	background: transparent;
+	z-index: 99;
+	position: absolute;
 
 	button{
-		height: 100%;
 		width: 100px;
+		height: 100%;
 		z-index: 9;
 		position: absolute;
 		border: none;
-		color: rgba(150,150,150,.7);
+		color: rgba(50,50,50,1);
 		font-size: 30px;
 
+		transition: right .5s .2s;
 	}
-
-	#right-newsSlider{
+	.right-newsSlider{
 		position: absolute;
-		right: 0;
+		right: -1291px;
 		background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.5));
 
 		&:hover{
@@ -30,7 +28,19 @@
 
 	}
 
-	#left-newsSlider{
+	.right-newsSlider-after{
+		position: absolute;
+		right: -1087px;
+		background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.5));
+
+		&:hover{
+			color: rgba(150,150,150,1);
+			background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.4), rgba(0,0,0,.5));
+		}		
+
+	}
+
+	.left-newsSlider{
 		position: absolute;
 		left: 0;
 		background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,.5));
@@ -40,7 +50,21 @@
 			background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,.4), rgba(0,0,0,.5));
 		}			
 	}
-	
+}
+
+
+.newsSlider{
+	width: 100%;
+	height: 30vh;
+	background-color: rgba(150,150,150,.8);
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: scroll;
+
+	&::-webkit-scrollbar{
+		height: 0;
+	}
+		
 	.contentContainer{
 		width: 400%;
 		height: 100%;
@@ -48,7 +72,7 @@
 		left: 0;
 		margin: 0;
 		transition: .5s ease-in-out;
-		background-color: pink;
+		background-color: transparent;
 
 		ul{
 			margin: 0;
@@ -62,22 +86,51 @@
 				height: 25vh;
 				float: left;
 				margin: 15px auto;
-				background-color: yellow;
-				padding: 10px;
+				background-color: #ccc;
+				padding: 10px 10px 10px 20px;
+				border-radius: 5px;
+				text-align: justify;
+
+				p{
+					//letter-spacing: 1px;
+					padding-top: 10%; 
+				}
+
+				input[type="button"]{
+					height: 30px;
+					width: 100px;
+					background-color: #888;
+					font-size: 20px;
+					border: none;
+					border-radius: 3px;
+					font-weight: bolder;
+					margin-top: 5%;
+					
+					&:hover{
+						background-color: #777;
+					}
+				}
+
+				img.event-image{
+					width: 160px;
+					height: 145px;
+					padding: 0px 0;
+				}
 			}
 
 			li:nth-child(1){
-				background-color: blue;
 				margin-left: 50px;
 			}
-			li:nth-child(2){
-				background-color: orange;
-			}
-			li:nth-child(3){
-				background-color: green;
-			}
-			li:last-child{
-				background-color: gray;
+		
+			.moreNews{
+				position: absolute;
+				right: 0;
+				margin-right: -257px;
+				height: 100%;
+				width: 250px;
+				background-color: rgba(120,120,120,.6);
+				padding: 0px 20px;
+				align-items: center; 
 			}
 		}
 	}

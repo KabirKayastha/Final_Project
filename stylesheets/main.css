@@ -5,35 +5,35 @@
   font-family: Gotham;
 }
 
-/* line 6, ../sass/base/_base.scss */
+/* line 7, ../sass/base/_base.scss */
 button {
   outline: hidden;
 }
 
-/* line 10, ../sass/base/_base.scss */
+/* line 11, ../sass/base/_base.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 16, ../sass/base/_base.scss */
+/* line 17, ../sass/base/_base.scss */
 section.behind-Navbar {
   height: 66px;
   width: 100%;
 }
 
-/* line 22, ../sass/base/_base.scss */
+/* line 23, ../sass/base/_base.scss */
 ::-webkit-scrollbar {
   width: 7px;
 }
 
-/* line 26, ../sass/base/_base.scss */
+/* line 27, ../sass/base/_base.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #aaa;
   border-radius: 3px;
 }
 
-/* line 31, ../sass/base/_base.scss */
+/* line 32, ../sass/base/_base.scss */
 ::-webkit-scrollbar-track {
   background-color: #ccc;
 }
@@ -651,46 +651,71 @@ span.search-tab .searchPanel select option {
 }
 
 /* line 1, ../sass/modules/_newsSlider.scss */
-.newsSlider {
-  width: 100%;
+.left-right-button {
   height: 30vh;
-  background-color: red;
-  position: relative;
-  overflow: hidden;
+  background: transparent;
+  z-index: 99;
+  position: absolute;
 }
-/* line 10, ../sass/modules/_newsSlider.scss */
-.newsSlider button {
-  height: 100%;
+/* line 8, ../sass/modules/_newsSlider.scss */
+.left-right-button button {
   width: 100px;
+  height: 100%;
   z-index: 9;
   position: absolute;
   border: none;
-  color: rgba(150, 150, 150, 0.7);
+  color: #323232;
   font-size: 30px;
+  transition: right .5s .2s;
 }
-/* line 21, ../sass/modules/_newsSlider.scss */
-.newsSlider #right-newsSlider {
+/* line 19, ../sass/modules/_newsSlider.scss */
+.left-right-button .right-newsSlider {
   position: absolute;
-  right: 0;
+  right: -1291px;
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
 }
-/* line 26, ../sass/modules/_newsSlider.scss */
-.newsSlider #right-newsSlider:hover {
+/* line 24, ../sass/modules/_newsSlider.scss */
+.left-right-button .right-newsSlider:hover {
   color: #969696;
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
 }
-/* line 33, ../sass/modules/_newsSlider.scss */
-.newsSlider #left-newsSlider {
+/* line 31, ../sass/modules/_newsSlider.scss */
+.left-right-button .right-newsSlider-after {
+  position: absolute;
+  right: -1087px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+}
+/* line 36, ../sass/modules/_newsSlider.scss */
+.left-right-button .right-newsSlider-after:hover {
+  color: #969696;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+}
+/* line 43, ../sass/modules/_newsSlider.scss */
+.left-right-button .left-newsSlider {
   position: absolute;
   left: 0;
   background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.5));
 }
-/* line 38, ../sass/modules/_newsSlider.scss */
-.newsSlider #left-newsSlider:hover {
+/* line 48, ../sass/modules/_newsSlider.scss */
+.left-right-button .left-newsSlider:hover {
   color: #969696;
   background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
 }
-/* line 44, ../sass/modules/_newsSlider.scss */
+
+/* line 56, ../sass/modules/_newsSlider.scss */
+.newsSlider {
+  width: 100%;
+  height: 30vh;
+  background-color: rgba(150, 150, 150, 0.8);
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+/* line 64, ../sass/modules/_newsSlider.scss */
+.newsSlider::-webkit-scrollbar {
+  height: 0;
+}
+/* line 68, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer {
   width: 400%;
   height: 100%;
@@ -698,39 +723,64 @@ span.search-tab .searchPanel select option {
   left: 0;
   margin: 0;
   transition: .5s ease-in-out;
-  background-color: pink;
+  background-color: transparent;
 }
-/* line 53, ../sass/modules/_newsSlider.scss */
+/* line 77, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
 }
-/* line 59, ../sass/modules/_newsSlider.scss */
+/* line 83, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li {
   position: relative;
   width: 9%;
   height: 25vh;
   float: left;
   margin: 15px auto;
-  background-color: yellow;
-  padding: 10px;
+  background-color: #ccc;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
+  text-align: justify;
 }
-/* line 69, ../sass/modules/_newsSlider.scss */
+/* line 94, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li p {
+  padding-top: 10%;
+}
+/* line 99, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li input[type="button"] {
+  height: 30px;
+  width: 100px;
+  background-color: #888;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bolder;
+  margin-top: 5%;
+}
+/* line 109, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li input[type="button"]:hover {
+  background-color: #777;
+}
+/* line 114, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul li img.event-image {
+  width: 160px;
+  height: 145px;
+  padding: 0px 0;
+}
+/* line 121, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li:nth-child(1) {
-  background-color: blue;
   margin-left: 50px;
 }
-/* line 73, ../sass/modules/_newsSlider.scss */
-.newsSlider .contentContainer ul li:nth-child(2) {
-  background-color: orange;
-}
-/* line 76, ../sass/modules/_newsSlider.scss */
-.newsSlider .contentContainer ul li:nth-child(3) {
-  background-color: green;
-}
-/* line 79, ../sass/modules/_newsSlider.scss */
-.newsSlider .contentContainer ul li:last-child {
-  background-color: gray;
+/* line 125, ../sass/modules/_newsSlider.scss */
+.newsSlider .contentContainer ul .moreNews {
+  position: absolute;
+  right: 0;
+  margin-right: -257px;
+  height: 100%;
+  width: 250px;
+  background-color: rgba(120, 120, 120, 0.6);
+  padding: 0px 20px;
+  align-items: center;
 }

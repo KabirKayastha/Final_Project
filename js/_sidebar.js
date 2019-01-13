@@ -7,6 +7,7 @@ $(document).ready(function(){
 		$('.toggleIcon').toggleClass('toggledIcon');
 		$('.searchBtn').toggleClass('searchBtn-After');
 		$('.hiddenSidebar-content').toggleClass('shownSidebar-content');
+		$('.right-newsSlider').toggleClass('right-newsSlider-after');
 	});
 
 	
