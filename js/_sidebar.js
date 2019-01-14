@@ -8,6 +8,7 @@ $(document).ready(function(){
 		$('.searchBtn').toggleClass('searchBtn-After');
 		$('.hiddenSidebar-content').toggleClass('shownSidebar-content');
 		$('.right-newsSlider').toggleClass('right-newsSlider-after');
+		$('.socialLinks').slideToggle("slow/400/fast");
 	});
 
 	

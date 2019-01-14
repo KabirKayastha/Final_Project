@@ -168,12 +168,12 @@ section.behind-Navbar {
   transition-duration: .5s;
   transition-delay: .2s;
 }
-/* line 13, ../sass/modules/_sidebar.scss */
+/* line 14, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul {
   list-style: none;
   text-align: center;
 }
-/* line 17, ../sass/modules/_sidebar.scss */
+/* line 18, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul li.toggleIcon {
   position: absolute;
   left: 25px;
@@ -189,16 +189,16 @@ section.behind-Navbar {
   transition-delay: .2s;
   transition-duration: .5s;
 }
-/* line 33, ../sass/modules/_sidebar.scss */
+/* line 34, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul li.toggleIcon:hover {
   color: black;
   border: 1px solid black;
 }
-/* line 39, ../sass/modules/_sidebar.scss */
+/* line 40, ../sass/modules/_sidebar.scss */
 .hiddenSidebar ul li.toggledIcon {
   transform: rotate(180deg);
 }
-/* line 44, ../sass/modules/_sidebar.scss */
+/* line 45, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content {
   position: relative;
   left: 999px;
@@ -207,11 +207,63 @@ section.behind-Navbar {
   transition-delay: .2s;
   transition-duration: .8s;
 }
-/* line 52, ../sass/modules/_sidebar.scss */
+/* line 53, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden {
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+/* line 58, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 63, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul li {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  padding-top: 7px;
+  border-radius: 50%;
+  background-color: #eee;
+  margin-left: 10px;
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+/* line 74, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul li a {
+  color: #000;
+  font-size: 20px;
+  transition-property: color;
+  transition-duration: .3s;
+}
+/* line 82, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul .fb:hover {
+  background-color: #4376b5;
+}
+/* line 86, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul .tw:hover {
+  background-color: #41adda;
+}
+/* line 90, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul li.ig {
+  padding-top: 6px;
+  padding-left: 1px;
+}
+/* line 95, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul .ig:hover {
+  background-color: #323232;
+}
+/* line 99, ../sass/modules/_sidebar.scss */
+.hiddenSidebar .hiddenSidebar-content .socialLinks-hidden ul .ig:hover a {
+  color: #fff;
+}
+/* line 105, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .marquee {
   margin: 0;
 }
-/* line 55, ../sass/modules/_sidebar.scss */
+/* line 108, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .marquee p {
   padding: 0 0 0 5px;
   margin: 0 0 0 7px;
@@ -220,7 +272,7 @@ section.behind-Navbar {
   color: #fff;
   letter-spacing: 2px;
 }
-/* line 63, ../sass/modules/_sidebar.scss */
+/* line 116, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .marquee p::after {
   content: '';
   height: 0;
@@ -230,7 +282,7 @@ section.behind-Navbar {
   border-left: 20px solid #a8a8a8;
   border-top: 20px solid transparent;
 }
-/* line 74, ../sass/modules/_sidebar.scss */
+/* line 127, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .marquee marquee {
   background-color: #e0e0e0;
   width: 20%;
@@ -238,12 +290,12 @@ section.behind-Navbar {
   margin-right: 7px;
   padding-top: 7px;
 }
-/* line 82, ../sass/modules/_sidebar.scss */
+/* line 135, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .marquee marquee ol li {
   display: inline;
   margin: 20px;
 }
-/* line 92, ../sass/modules/_sidebar.scss */
+/* line 145, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul {
   background-color: transparent;
   position: absolute;
@@ -257,32 +309,32 @@ section.behind-Navbar {
   overflow-x: hidden;
   display: block;
 }
-/* line 105, ../sass/modules/_sidebar.scss */
+/* line 158, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul::-webkit-scrollbar {
   width: 7px;
   background-color: transparent;
 }
-/* line 110, ../sass/modules/_sidebar.scss */
+/* line 163, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul::-webkit-scrollbar-thumb {
   background-color: transparent;
   border-radius: 3px;
 }
-/* line 116, ../sass/modules/_sidebar.scss */
+/* line 169, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul:hover::-webkit-scrollbar {
   background-color: #ccc;
 }
-/* line 120, ../sass/modules/_sidebar.scss */
+/* line 173, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul:hover::-webkit-scrollbar-thumb {
   background-color: #aaa;
 }
-/* line 125, ../sass/modules/_sidebar.scss */
+/* line 178, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul li {
   background-color: #aaaaaa;
   margin-bottom: 20px;
   padding: 5px 20px 20px 20px;
   border-radius: 5px;
 }
-/* line 131, ../sass/modules/_sidebar.scss */
+/* line 184, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul li .content-header {
   width: 95%;
   background-color: #ccc;
@@ -290,12 +342,12 @@ section.behind-Navbar {
   text-transform: uppercase;
   border-radius: 3px;
 }
-/* line 138, ../sass/modules/_sidebar.scss */
+/* line 191, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul li .content-header h3 {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-/* line 146, ../sass/modules/_sidebar.scss */
+/* line 199, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul li .content-body button {
   margin-top: 15px;
   background-color: #ccc;
@@ -303,21 +355,72 @@ section.behind-Navbar {
   border-radius: 3px;
   padding: 5px;
 }
-/* line 153, ../sass/modules/_sidebar.scss */
+/* line 206, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul li .content-body button:hover {
   background-color: #D6D6D6;
 }
-/* line 160, ../sass/modules/_sidebar.scss */
+/* line 213, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .hiddenSidebar-content .content ul li:last-child {
   margin-bottom: 10px;
 }
-/* line 167, ../sass/modules/_sidebar.scss */
+/* line 220, ../sass/modules/_sidebar.scss */
 .hiddenSidebar .shownSidebar-content {
   position: relative;
   left: 0px;
 }
 
-/* line 175, ../sass/modules/_sidebar.scss */
+/* line 227, ../sass/modules/_sidebar.scss */
+.socialLinks {
+  position: absolute;
+  bottom: 0;
+}
+/* line 231, ../sass/modules/_sidebar.scss */
+.socialLinks ul {
+  background: transparent;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 12px;
+  list-style: none;
+}
+/* line 239, ../sass/modules/_sidebar.scss */
+.socialLinks ul li {
+  margin-bottom: 10px;
+  padding: 12px 0;
+  height: 50px;
+  width: 50px;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: .3s;
+}
+/* line 251, ../sass/modules/_sidebar.scss */
+.socialLinks ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  transition-property: color;
+  transition-duration: .3s;
+}
+/* line 262, ../sass/modules/_sidebar.scss */
+.socialLinks ul .fb:hover {
+  background-color: #4376b5;
+}
+/* line 269, ../sass/modules/_sidebar.scss */
+.socialLinks ul .tw:hover {
+  background-color: #41adda;
+}
+/* line 276, ../sass/modules/_sidebar.scss */
+.socialLinks ul .ig:hover {
+  background-color: #323232;
+}
+/* line 280, ../sass/modules/_sidebar.scss */
+.socialLinks ul .ig:hover a {
+  color: #fff;
+}
+
+/* line 288, ../sass/modules/_sidebar.scss */
 .sidebar {
   position: fixed;
   right: 0;
@@ -326,7 +429,7 @@ section.behind-Navbar {
   background-color: #ccc;
 }
 
-/* line 185, ../sass/modules/_sidebar.scss */
+/* line 298, ../sass/modules/_sidebar.scss */
 .body, .navBar {
   width: 95%;
   transition-property: width;
@@ -335,7 +438,7 @@ section.behind-Navbar {
   text-align: justify;
 }
 
-/* line 193, ../sass/modules/_sidebar.scss */
+/* line 306, ../sass/modules/_sidebar.scss */
 .bodyAfter, .navBar-After {
   width: 80%;
 }
@@ -431,17 +534,17 @@ section.behind-Navbar {
   cursor: pointer;
 }
 
-/* line 19, ../sass/modules/_login-register.scss */
+/* line 18, ../sass/modules/_login-register.scss */
 .buttonContainer button#signIn {
   margin-top: 30px;
 }
 
-/* line 23, ../sass/modules/_login-register.scss */
+/* line 22, ../sass/modules/_login-register.scss */
 .buttonContainer button#signUp {
   margin-top: 2px;
 }
 
-/* line 28, ../sass/modules/_login-register.scss */
+/* line 27, ../sass/modules/_login-register.scss */
 .inputWithIcon input {
   position: relative;
   width: 80%;
@@ -453,13 +556,13 @@ section.behind-Navbar {
   padding-left: 10px;
 }
 
-/* line 39, ../sass/modules/_login-register.scss */
+/* line 38, ../sass/modules/_login-register.scss */
 .inputWithIcon {
   align-items: center;
   text-align: center;
 }
 
-/* line 44, ../sass/modules/_login-register.scss */
+/* line 43, ../sass/modules/_login-register.scss */
 .eye {
   position: absolute;
   cursor: pointer;
@@ -467,7 +570,7 @@ section.behind-Navbar {
   right: 55px;
 }
 
-/* line 51, ../sass/modules/_login-register.scss */
+/* line 50, ../sass/modules/_login-register.scss */
 .eyeReg {
   position: absolute;
   cursor: pointer;
@@ -475,26 +578,26 @@ section.behind-Navbar {
   right: 55px;
 }
 
-/* line 58, ../sass/modules/_login-register.scss */
+/* line 57, ../sass/modules/_login-register.scss */
 .eye-slash {
   display: none;
 }
 
-/* line 62, ../sass/modules/_login-register.scss */
+/* line 61, ../sass/modules/_login-register.scss */
 #userIcon, #pwIcon {
   position: relative;
   top: 20px;
   left: 12px;
 }
 
-/* line 68, ../sass/modules/_login-register.scss */
+/* line 67, ../sass/modules/_login-register.scss */
 #emailIcon {
   position: relative;
   top: 42px;
   left: 12px;
 }
 
-/* line 74, ../sass/modules/_login-register.scss */
+/* line 73, ../sass/modules/_login-register.scss */
 .tabPanel button {
   margin: 10px 0 0 0;
   width: 25%;
@@ -508,56 +611,56 @@ section.behind-Navbar {
   text-transform: uppercase;
   font-weight: bolder;
 }
-/* line 87, ../sass/modules/_login-register.scss */
+/* line 86, ../sass/modules/_login-register.scss */
 .tabPanel button:hover {
   background-color: #E0E0E0;
 }
-/* line 91, ../sass/modules/_login-register.scss */
+/* line 90, ../sass/modules/_login-register.scss */
 .tabPanel button a {
   text-decoration: none;
   color: #000;
 }
 
-/* line 98, ../sass/modules/_login-register.scss */
+/* line 97, ../sass/modules/_login-register.scss */
 .tabPanel p {
   margin: 10px 0;
   font-size: 10px;
 }
-/* line 103, ../sass/modules/_login-register.scss */
+/* line 102, ../sass/modules/_login-register.scss */
 .tabPanel .use {
   padding: 5px;
 }
-/* line 106, ../sass/modules/_login-register.scss */
+/* line 105, ../sass/modules/_login-register.scss */
 .tabPanel .use p {
   font-size: 13px;
   margin-left: 10px;
   font-weight: bolder;
 }
-/* line 112, ../sass/modules/_login-register.scss */
+/* line 111, ../sass/modules/_login-register.scss */
 .tabPanel .use a {
   text-decoration: none;
   color: #000;
 }
-/* line 116, ../sass/modules/_login-register.scss */
+/* line 115, ../sass/modules/_login-register.scss */
 .tabPanel .use a .fb, .tabPanel .use a .tw, .tabPanel .use a .go {
   transition-property: background-color, color;
   transition-duration: .5s;
   transition-delay: 0s;
 }
-/* line 122, ../sass/modules/_login-register.scss */
+/* line 121, ../sass/modules/_login-register.scss */
 .tabPanel .use a .fb:hover {
   background-color: #4376b5;
 }
-/* line 126, ../sass/modules/_login-register.scss */
+/* line 125, ../sass/modules/_login-register.scss */
 .tabPanel .use a .tw:hover {
   background-color: #41adda;
 }
-/* line 130, ../sass/modules/_login-register.scss */
+/* line 129, ../sass/modules/_login-register.scss */
 .tabPanel .use a .go:hover {
   background-color: #323232;
   color: #fff;
 }
-/* line 135, ../sass/modules/_login-register.scss */
+/* line 134, ../sass/modules/_login-register.scss */
 .tabPanel .use a .regIcon {
   height: 30px;
   width: 30px;
@@ -664,45 +767,45 @@ span.search-tab .searchPanel select option {
   z-index: 9;
   position: absolute;
   border: none;
-  color: #323232;
+  color: transparent;
   font-size: 30px;
-  transition: right .5s .2s;
+  transition: right .5s .2s, background .3s, color .3s;
 }
 /* line 19, ../sass/modules/_newsSlider.scss */
 .left-right-button .right-newsSlider {
   position: absolute;
   right: -1291px;
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
 }
-/* line 24, ../sass/modules/_newsSlider.scss */
+/* line 30, ../sass/modules/_newsSlider.scss */
 .left-right-button .right-newsSlider:hover {
   color: #969696;
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
-/* line 31, ../sass/modules/_newsSlider.scss */
+/* line 44, ../sass/modules/_newsSlider.scss */
 .left-right-button .right-newsSlider-after {
   position: absolute;
   right: -1087px;
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
 }
-/* line 36, ../sass/modules/_newsSlider.scss */
+/* line 55, ../sass/modules/_newsSlider.scss */
 .left-right-button .right-newsSlider-after:hover {
   color: #969696;
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
-/* line 43, ../sass/modules/_newsSlider.scss */
+/* line 69, ../sass/modules/_newsSlider.scss */
 .left-right-button .left-newsSlider {
   position: absolute;
   left: 0;
-  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
 }
-/* line 48, ../sass/modules/_newsSlider.scss */
+/* line 80, ../sass/modules/_newsSlider.scss */
 .left-right-button .left-newsSlider:hover {
   color: #969696;
-  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
 
-/* line 56, ../sass/modules/_newsSlider.scss */
+/* line 95, ../sass/modules/_newsSlider.scss */
 .newsSlider {
   width: 100%;
   height: 30vh;
@@ -711,11 +814,11 @@ span.search-tab .searchPanel select option {
   overflow-y: hidden;
   overflow-x: scroll;
 }
-/* line 64, ../sass/modules/_newsSlider.scss */
+/* line 103, ../sass/modules/_newsSlider.scss */
 .newsSlider::-webkit-scrollbar {
   height: 0;
 }
-/* line 68, ../sass/modules/_newsSlider.scss */
+/* line 107, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer {
   width: 400%;
   height: 100%;
@@ -725,14 +828,14 @@ span.search-tab .searchPanel select option {
   transition: .5s ease-in-out;
   background-color: transparent;
 }
-/* line 77, ../sass/modules/_newsSlider.scss */
+/* line 116, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
 }
-/* line 83, ../sass/modules/_newsSlider.scss */
+/* line 122, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li {
   position: relative;
   width: 9%;
@@ -744,11 +847,11 @@ span.search-tab .searchPanel select option {
   border-radius: 5px;
   text-align: justify;
 }
-/* line 94, ../sass/modules/_newsSlider.scss */
+/* line 133, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li p {
   padding-top: 10%;
 }
-/* line 99, ../sass/modules/_newsSlider.scss */
+/* line 138, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li input[type="button"] {
   height: 30px;
   width: 100px;
@@ -759,21 +862,22 @@ span.search-tab .searchPanel select option {
   font-weight: bolder;
   margin-top: 5%;
 }
-/* line 109, ../sass/modules/_newsSlider.scss */
+/* line 148, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li input[type="button"]:hover {
   background-color: #777;
 }
-/* line 114, ../sass/modules/_newsSlider.scss */
+/* line 153, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li img.event-image {
   width: 160px;
   height: 145px;
   padding: 0px 0;
+  border-radius: 3px;
 }
-/* line 121, ../sass/modules/_newsSlider.scss */
+/* line 161, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li:nth-child(1) {
   margin-left: 50px;
 }
-/* line 125, ../sass/modules/_newsSlider.scss */
+/* line 165, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul .moreNews {
   position: absolute;
   right: 0;

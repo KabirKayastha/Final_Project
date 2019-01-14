@@ -6,6 +6,7 @@
 	width: 5%;
 	background-color: #ccc;
 	z-index: 99;
+
 	transition-property: width, background-color;
 	transition-duration: .5s;
 	transition-delay: .2s;	
@@ -48,6 +49,58 @@
 		transition-property: left;
 		transition-delay: .2s;
 		transition-duration: .8s;
+
+		.socialLinks-hidden{
+			position: absolute;
+			top: -50px;
+			left: 100px;
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li{
+					display: inline-block;
+					height: 40px;
+					width: 40px;
+					padding-top: 7px;
+					border-radius: 50%;
+					background-color: #eee;
+					margin-left: 10px;
+					transition-property: background-color;
+					transition-duration: .3s;
+					
+					a{
+						color: #000;
+						font-size: 20px;
+						transition-property: color;
+						transition-duration: .3s;
+					}
+				}
+
+				.fb:hover{
+					background-color: rgb(67, 118, 181);
+				}
+
+				.tw:hover{
+					background-color: rgb(65, 173, 218);
+				}
+
+				li.ig{
+					padding-top: 6px;
+					padding-left: 1px;
+				}
+
+				.ig:hover{
+					background-color: rgb(50, 50, 50);
+				}
+
+				.ig:hover a{
+					color: #fff;
+				}
+			}
+		}
 
 		.marquee{
 			margin: 0;
@@ -169,6 +222,66 @@
 		left: 0px;
 	}
 
+}
+
+.socialLinks{
+	position: absolute;
+	bottom: 0;
+
+	ul{
+		background: transparent;
+		display: block;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0 12px;
+		list-style: none;
+
+		li{
+			margin-bottom: 10px;
+			padding: 12px 0;
+			height: 50px;
+			width: 50px;
+			background-color: #eee;
+			border-radius: 50%;
+			cursor: pointer;
+
+			transition-property: background-color, color;
+			transition-duration: .3s;
+
+			a{
+				text-decoration: none;
+				font-size: 20px;
+				color: #000;
+				transition-property: color;
+				transition-duration: .3s; 
+			}
+		}
+
+		.fb{
+
+			&:hover{
+				background-color: rgba(67, 118, 181, 1);
+			}
+		}
+
+		.tw{
+
+			&:hover{
+				background-color: rgb(65, 173, 218);
+			}
+		}
+
+		.ig{
+
+			&:hover{
+				background-color: rgb(50, 50, 50);
+			}
+
+			&:hover a{
+				color: #fff;
+			}
+		}
+	}
 }
 
 
