@@ -893,7 +893,7 @@ span.search-tab .searchPanel select option {
 .jobPanel {
   height: 80vh;
   width: 95%;
-  margin: 50px auto 30px auto;
+  margin: 50px auto 80px auto;
   background-color: rgba(224, 224, 224, 0.6);
   border-radius: 5px;
   padding: 25px;
@@ -949,7 +949,7 @@ span.search-tab .searchPanel select option {
 /* line 58, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .sidenav-Recent {
   float: left;
-  height: 427px;
+  height: 100%;
   width: 15%;
 }
 /* line 63, ../sass/modules/_jobPanel.scss */
@@ -986,7 +986,7 @@ span.search-tab .searchPanel select option {
 /* line 95, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements {
   width: 85%;
-  height: 428px;
+  height: 100%;
   background-color: transparent;
   float: left;
   border-radius: 0 0 5px 0;
@@ -1004,8 +1004,8 @@ span.search-tab .searchPanel select option {
 /* line 112, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ol li {
   display: inline-block;
+  height: 17vh;
   width: 100%;
-  height: 110px;
   background-color: blue;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -1041,4 +1041,73 @@ span.search-tab .searchPanel select option {
 /* line 151, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-left:hover, .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-right:hover {
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), transparent);
+}
+
+/* line 1, ../sass/modules/_employers.scss */
+.employers {
+  width: 100%;
+  height: 300px;
+  margin: 50px 0;
+  padding-top: 0px;
+}
+/* line 7, ../sass/modules/_employers.scss */
+.employers h3 {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* line 12, ../sass/modules/_employers.scss */
+.employers .content-interface {
+  width: 90%;
+  position: relative;
+  top: 10px;
+  margin: 0px 5%;
+  background: #ccc;
+  background-size: cover;
+  border-radius: 5px;
+}
+/* line 21, ../sass/modules/_employers.scss */
+.employers .content-interface .content-slide {
+  width: 100%;
+  height: 200px;
+}
+/* line 25, ../sass/modules/_employers.scss */
+.employers .content-interface .content-slide ul {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: auto;
+  padding-top: 35px;
+}
+/* line 33, ../sass/modules/_employers.scss */
+.employers .content-interface .content-slide ul li {
+  float: left;
+  height: 80%;
+  width: 12%;
+  background: rgba(200, 200, 200, 0.3);
+  margin-left: 45px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* line 42, ../sass/modules/_employers.scss */
+.employers .content-interface .content-slide ul li img {
+  height: 100%;
+  width: 100%;
+}
+/* line 48, ../sass/modules/_employers.scss */
+.employers .content-interface .content-slide ul li:first-child {
+  margin-left: 10px;
+}
+
+/* line 1, ../sass/modules/_footer.scss */
+.footer {
+  height: 200px;
+  width: 100%;
+  background-color: #222;
+  padding-top: 100px;
+}
+/* line 7, ../sass/modules/_footer.scss */
+.footer p {
+  color: #eee;
+  letter-spacing: 2px;
 }
