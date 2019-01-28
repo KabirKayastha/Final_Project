@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+//prev-next scrolling
 	panel_LeftBtn = $("#panel-left-Btn");
 	panel_RightBtn = $("#panel-right-Btn");
 	panel_slide = $(".elements ol");
@@ -21,3 +22,4 @@ $(document).ready(function() {
 	});
 
 });
+
