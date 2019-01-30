@@ -405,23 +405,19 @@
 				<div class="button-JobPanel">
 					<ul>
 						<li>
-							<button id="Recent" onclick="showJobPanel(0,'#bbb')"> Recent </button>
+							<button id="Recent" onclick="showJobPanel(0,'#bbb','orange')"> Recent </button>
 						</li>
 
 						<li>
-							<button id="All" onclick="showJobPanel(1,'#bbb')"> All </button>
+							<button id="Admin" onclick="showJobPanel(1,'#bbb','orange')"> Admin </button>
 						</li>
 
 						<li>
-							<button id="Admin" onclick="showJobPanel(2,'#bbb')"> Admin </button>
+							<button id="Engineer" onclick="showJobPanel(2,'#bbb','orange')"> Engineer </button>
 						</li>
 
 						<li>
-							<button id="Engineer" onclick="showJobPanel(3,'#bbb')"> Engineer </button>
-						</li>
-
-						<li>
-							<button id="Medical" onclick="showJobPanel(4,'#bbb')"> Medical </button>
+							<button id="Medical" onclick="showJobPanel(3,'#bbb','orange')"> Medical </button>
 						</li>
 					
 					<!--
@@ -452,9 +448,9 @@
 						<ol>
 							<div class="row">
 								<div class="col-md-1">
-									<li style="background-color: yellow">lorem</li>
-									<li style="background-color: yellow">lorem</li>
-									<li style="background-color: yellow">lorem</li>									
+									<li>lorem</li>
+									<li>lorem</li>
+									<li>lorem</li>									
 								</div>
 
 								<div class="col-md-1">
@@ -464,9 +460,9 @@
 								</div>
 
 								<div class="col-md-1">
-									<li style="background-color: orange">lorem</li>
-									<li style="background-color: orange">lorem</li>
-									<li style="background-color: orange">lorem</li>									
+									<li>lorem</li>
+									<li>lorem</li>
+									<li>lorem</li>									
 								</div>
 
 								<div class="col-md-1">
@@ -476,9 +472,9 @@
 								</div>
 
 								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
+									<li>lorem</li>
+									<li>lorem</li>
+									<li>lorem</li>									
 								</div>
 
 								<div class="col-md-1">
@@ -488,9 +484,9 @@
 								</div>
 
 								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
+									<li>lorem</li>
+									<li>lorem</li>
+									<li>lorem</li>									
 								</div>
 
 								<div class="col-md-1">
@@ -500,15 +496,15 @@
 								</div>
 
 								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
+									<li>lorem</li>
+									<li>lorem</li>
+									<li>lorem</li>									
 								</div>
 
 								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
+									<li>lorem</li>
+									<li>lorem</li>
+									<li>lorem</li>									
 								</div>
 
 								<div class="col-md-1">
@@ -528,7 +524,7 @@
 					</div>
 
 					<!-- prev-next-buttons -->
-					<div class="slideBtn-JobPanel">
+					<div class="slideBtn-JobPanel withoutSideBtn">
 						<button class="panel-left" id="panel-left-Btn">
 							<i class="fas fa-angle-double-left"></i>
 							<i class="fas fa-angle-double-left"></i>
@@ -544,23 +540,26 @@
 				</div>
 				<!-- /recent-content -->
 
-				<!-- all-content -->
-				<div class="jobPanel-content" id="All-Content">
-					<div class="sidenav-All">
+				
+
+				<!-- admin-content -->
+				<div class="jobPanel-content" id="Admin-Content">
+					<div class="sidenav-Admin">
 						<ul>
 
 						<li>
-							<button id="AllAdmin" onclick="showRecentJob()"> Admin </button>
+							<button id="AllAdmin" onclick="showRecentJob()"> Reception </button>
 						</li>
 
 						<li>
-							<button id="AllEngineer" onclick="showRecentJob()"> Engineer </button>
+							<button id="AllEngineer" onclick="showRecentJob()"> Management </button>
 						</li>
 
 						<li>
-							<button id="AllMedical" onclick="showRecentJob()"> Medical </button>
+							<button id="AllMedical" onclick="showRecentJob()"> Administration </button>
 						</li>
-
+						
+					<!--
 						<li>
 							<button id="AllBank" onclick="showRecentJob()"> Bank </button>
 						</li>
@@ -576,90 +575,95 @@
 						<li>
 							<button id="AllOther" onclick="showRecentJob()"> Other </button>
 						</li>
+					-->
 
 						</ul>
 					</div>
 
 
-					<div class="elements all">
+					<div class="elements withSideBtn">
 						<ol>
 							<div class="row">
 								<div class="col-md-1">
-									<li style="background-color: yellow">lorem</li>
-									<li style="background-color: yellow">lorem</li>
-									<li style="background-color: yellow">lorem</li>									
+									<li>
+										<div class="row">
+											<div class="col-md-7 description">
+												<ol>
+													<li>Qualification....</li>
+													<li>asd</li>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi doloremque error vitae cumque excepturi quia iste quo possimus perferendis adipisci.
+												</ol> 											
+											</div>
+
+											<div class="col-md-5 logoContainer">
+												<img src="img/gradient.jpg" alt="logo">
+											</div>
+
+										</div>
+									</li>
+
+									<li>lorem</li>
+																		
 								</div>
 
 								<div class="col-md-1">
 									<li>lorem</li>
 									<li>lorem</li>
-									<li>lorem</li>									
-								</div>
-
-								<div class="col-md-1">
-									<li style="background-color: orange">lorem</li>
-									<li style="background-color: orange">lorem</li>
-									<li style="background-color: orange">lorem</li>									
 								</div>
 
 								<div class="col-md-1">
 									<li>lorem</li>
 									<li>lorem</li>
-									<li>lorem</li>									
-								</div>
-
-								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
 								</div>
 
 								<div class="col-md-1">
 									<li>lorem</li>
 									<li>lorem</li>
-									<li>lorem</li>									
-								</div>
-
-								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
 								</div>
 
 								<div class="col-md-1">
 									<li>lorem</li>
 									<li>lorem</li>
-									<li>lorem</li>									
-								</div>
-
-								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
-								</div>
-
-								<div class="col-md-1">
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>
-									<li style="background-color: red">lorem</li>									
 								</div>
 
 								<div class="col-md-1">
 									<li>lorem</li>
 									<li>lorem</li>
-									<li>lorem</li>									
+								</div>
+
+								<div class="col-md-1">
+									<li>lorem</li>
+									<li>lorem</li>
+								</div>
+
+								<div class="col-md-1">
+									<li>lorem</li>
+									<li>lorem</li>
+								</div>
+
+								<div class="col-md-1">
+									<li>lorem</li>
+									<li>lorem</li>
+								</div>
+
+								<div class="col-md-1">
+									<li>lorem</li>
+									<li>lorem</li>
+								</div>
+
+								<div class="col-md-1">
+									<li>lorem</li>
+									<li>lorem</li>
 								</div>
 
 								<div class="col-md-1">
 									<li style="background-color: green">lorem</li>
 									<li style="background-color: green">lorem</li>
-									<li style="background-color: green">lorem</li>									
 								</div>
 
 							</div>
 						</ol>
 					</div>
-					<!-- /all-content -->
 					
 					<!-- prev-next-buttons -->
 					<div class="slideBtn-JobPanel">
@@ -674,7 +678,9 @@
 						</button>
 					</div>
 					<!-- /prev-next-buttons -->
+				
 				</div>
+				<!-- /admin-content -->
 
 			</div>
 			<!-- /jobPanel -->

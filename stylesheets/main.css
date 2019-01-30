@@ -777,35 +777,35 @@ span.search-tab .searchPanel select option {
   right: -1291px;
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
 }
-/* line 30, ../sass/modules/_newsSlider.scss */
+/* line 24, ../sass/modules/_newsSlider.scss */
 .left-right-button .right-newsSlider:hover {
   color: #969696;
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
-/* line 44, ../sass/modules/_newsSlider.scss */
+/* line 31, ../sass/modules/_newsSlider.scss */
 .left-right-button .right-newsSlider-after {
   position: absolute;
   right: -1087px;
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
 }
-/* line 55, ../sass/modules/_newsSlider.scss */
+/* line 36, ../sass/modules/_newsSlider.scss */
 .left-right-button .right-newsSlider-after:hover {
   color: #969696;
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
-/* line 69, ../sass/modules/_newsSlider.scss */
+/* line 43, ../sass/modules/_newsSlider.scss */
 .left-right-button .left-newsSlider {
   position: absolute;
   left: 0;
   background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
 }
-/* line 80, ../sass/modules/_newsSlider.scss */
+/* line 48, ../sass/modules/_newsSlider.scss */
 .left-right-button .left-newsSlider:hover {
   color: #969696;
   background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
 
-/* line 95, ../sass/modules/_newsSlider.scss */
+/* line 56, ../sass/modules/_newsSlider.scss */
 .newsSlider {
   width: 100%;
   height: 30vh;
@@ -814,11 +814,11 @@ span.search-tab .searchPanel select option {
   overflow-y: hidden;
   overflow-x: scroll;
 }
-/* line 103, ../sass/modules/_newsSlider.scss */
+/* line 64, ../sass/modules/_newsSlider.scss */
 .newsSlider::-webkit-scrollbar {
   height: 0;
 }
-/* line 107, ../sass/modules/_newsSlider.scss */
+/* line 68, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer {
   width: 400%;
   height: 100%;
@@ -828,14 +828,14 @@ span.search-tab .searchPanel select option {
   transition: .5s ease-in-out;
   background-color: transparent;
 }
-/* line 116, ../sass/modules/_newsSlider.scss */
+/* line 77, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
 }
-/* line 122, ../sass/modules/_newsSlider.scss */
+/* line 83, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li {
   position: relative;
   width: 9%;
@@ -847,11 +847,11 @@ span.search-tab .searchPanel select option {
   border-radius: 5px;
   text-align: justify;
 }
-/* line 133, ../sass/modules/_newsSlider.scss */
+/* line 94, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li p {
   padding-top: 10%;
 }
-/* line 138, ../sass/modules/_newsSlider.scss */
+/* line 99, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li input[type="button"] {
   height: 30px;
   width: 100px;
@@ -862,22 +862,22 @@ span.search-tab .searchPanel select option {
   font-weight: bolder;
   margin-top: 5%;
 }
-/* line 148, ../sass/modules/_newsSlider.scss */
+/* line 109, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li input[type="button"]:hover {
   background-color: #777;
 }
-/* line 153, ../sass/modules/_newsSlider.scss */
+/* line 114, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li img.event-image {
   width: 160px;
   height: 145px;
   padding: 0px 0;
   border-radius: 3px;
 }
-/* line 161, ../sass/modules/_newsSlider.scss */
+/* line 122, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul li:nth-child(1) {
   margin-left: 50px;
 }
-/* line 165, ../sass/modules/_newsSlider.scss */
+/* line 126, ../sass/modules/_newsSlider.scss */
 .newsSlider .contentContainer ul .moreNews {
   position: absolute;
   right: 0;
@@ -916,76 +916,79 @@ span.search-tab .searchPanel select option {
   height: 100%;
   background: transparent;
   margin: 0;
+  margin-right: 1px;
   cursor: pointer;
 }
-/* line 28, ../sass/modules/_jobPanel.scss */
+/* line 29, ../sass/modules/_jobPanel.scss */
 .jobPanel .button-JobPanel ul li button {
   width: 100%;
   height: 100%;
   border: none;
   background: #ccc;
-  border-right: 2px solid #d2d2d2;
+  border-bottom: 2px solid transparent;
 }
-/* line 35, ../sass/modules/_jobPanel.scss */
+/* line 37, ../sass/modules/_jobPanel.scss */
 .jobPanel .button-JobPanel ul li button:hover {
   background: #dfdfdf;
 }
-/* line 40, ../sass/modules/_jobPanel.scss */
+/* line 42, ../sass/modules/_jobPanel.scss */
 .jobPanel .button-JobPanel ul li #Recent {
   border-radius: 5px 0 0 0;
 }
-/* line 44, ../sass/modules/_jobPanel.scss */
+/* line 46, ../sass/modules/_jobPanel.scss */
 .jobPanel .button-JobPanel ul li #Medical {
   border-radius: 0 5px 0 0;
-  border: none;
+  border-right: none;
 }
-/* line 53, ../sass/modules/_jobPanel.scss */
+/* line 54, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content {
   width: 100%;
   height: 90%;
   background: #dddeee;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 5px 5px 5px;
 }
-/* line 59, ../sass/modules/_jobPanel.scss */
-.jobPanel .jobPanel-content .sidenav-All {
+/* line 60, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .sidenav-Admin {
   float: left;
   height: 100%;
   width: 15%;
 }
-/* line 64, ../sass/modules/_jobPanel.scss */
-.jobPanel .jobPanel-content .sidenav-All ul {
-  background-color: transparent;
+/* line 65, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .sidenav-Admin ul {
+  background-color: #ccc;
   list-style: none;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  border-radius: 0 0 0 5px;
 }
-/* line 72, ../sass/modules/_jobPanel.scss */
-.jobPanel .jobPanel-content .sidenav-All ul li {
+/* line 74, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .sidenav-Admin ul li {
   width: 100%;
   height: 14.2%;
   background-color: transparent;
 }
-/* line 77, ../sass/modules/_jobPanel.scss */
-.jobPanel .jobPanel-content .sidenav-All ul li button {
+/* line 79, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .sidenav-Admin ul li button {
   width: 100%;
   height: 100%;
   border: none;
   background: #DBDBDB;
-  border-top: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
 }
-/* line 84, ../sass/modules/_jobPanel.scss */
-.jobPanel .jobPanel-content .sidenav-All ul li button:hover {
+/* line 86, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .sidenav-Admin ul li button:hover {
   background: #f0f0ef;
 }
-/* line 89, ../sass/modules/_jobPanel.scss */
-.jobPanel .jobPanel-content .sidenav-All ul li #AllOther {
+/* line 91, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .sidenav-Admin ul li #AllOther {
+  border-bottom: none;
   border-radius: 0 0 0 5px;
 }
-/* line 96, ../sass/modules/_jobPanel.scss */
+/* line 99, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements {
-  width: 85%;
+  width: 100%;
   height: 100%;
   background-color: transparent;
   float: left;
@@ -993,7 +996,7 @@ span.search-tab .searchPanel select option {
   overflow-x: scroll;
   overflow-y: hidden;
 }
-/* line 105, ../sass/modules/_jobPanel.scss */
+/* line 108, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ol {
   position: relative;
   width: 400%;
@@ -1001,27 +1004,71 @@ span.search-tab .searchPanel select option {
   padding: 15px 20px;
   transition: .7s;
 }
-/* line 113, ../sass/modules/_jobPanel.scss */
+/* line 116, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ol li {
   display: inline-block;
-  height: 17vh;
+  height: 26vh;
   width: 100%;
-  background-color: blue;
+  background-color: #aaa;
+  padding: 6px 10px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
-/* line 124, ../sass/modules/_jobPanel.scss */
+/* line 125, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .elements ol li .description {
+  padding-right: 0;
+}
+/* line 127, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .elements ol li .description ol {
+  background-color: red;
+  width: 100%;
+  height: 158px;
+  margin: 0px;
+  margin-right: -10px;
+  padding: 0;
+  overflow-y: scroll;
+}
+/* line 136, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .elements ol li .description ol li {
+  height: 0px;
+  width: 100px;
+  background-color: transparent;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+/* line 145, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .elements ol li .description ol::-webkit-scrollbar {
+  width: 7px;
+}
+/* line 149, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .elements ol li .description ol::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+/* line 153, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .elements ol li .description ol::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+/* line 162, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .elements ol li .logoContainer img {
+  width: 100%;
+}
+/* line 170, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements::-webkit-scrollbar {
   height: 0;
 }
-/* line 129, ../sass/modules/_jobPanel.scss */
+/* line 175, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .withSideBtn {
+  width: 85%;
+}
+/* line 179, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel {
   float: right;
   width: 85%;
   position: relative;
   bottom: 30px;
 }
-/* line 135, ../sass/modules/_jobPanel.scss */
+/* line 185, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel button {
   margin: 0;
   width: 50%;
@@ -1030,17 +1077,20 @@ span.search-tab .searchPanel select option {
   font-size: 17px;
   letter-spacing: -3.5px;
   border: none;
-  background: transparent;
   transition: background .3s;
 }
-/* line 148, ../sass/modules/_jobPanel.scss */
+/* line 197, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-left, .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-right {
   transition-property: background;
   transition-duration: .5s;
 }
-/* line 152, ../sass/modules/_jobPanel.scss */
+/* line 201, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-left:hover, .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-right:hover {
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), transparent);
+}
+/* line 207, ../sass/modules/_jobPanel.scss */
+.jobPanel .jobPanel-content .withoutSideBtn {
+  width: 100%;
 }
 
 /* line 1, ../sass/modules/_employers.scss */

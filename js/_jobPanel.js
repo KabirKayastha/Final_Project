@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 //prev-next scrolling
-	panel_LeftBtn = $("#panel-left-Btn");
-	panel_RightBtn = $("#panel-right-Btn");
+	panel_LeftBtn = $(".panel-left");
+	panel_RightBtn = $(".panel-right");
 	panel_slide = $(".elements ol");
 		
 	z=0;
@@ -20,6 +20,8 @@ $(document).ready(function() {
 		panel_slide.css('left', -z+'%');
 
 	});
+
+	
 
 });
 
