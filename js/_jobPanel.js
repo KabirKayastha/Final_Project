@@ -3,7 +3,7 @@ $(document).ready(function() {
 //prev-next scrolling
 	panel_LeftBtn = $(".panel-left");
 	panel_RightBtn = $(".panel-right");
-	panel_slide = $(".elements ol");
+	panel_slide = $(".elements ul");
 		
 	z=0;
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	});
 
-	
 
 });
+
 

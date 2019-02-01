@@ -105,11 +105,11 @@
 			overflow-x: scroll;
 			overflow-y: hidden;
 
-			ol{
+			ul{
 				position: relative;
 				width: 400%;
 				//list-style: none;
-				margin: 0;
+				//margin: 0;
 				padding: 15px 20px;
 				transition: .7s;
 
@@ -123,46 +123,77 @@
 					border-radius: 5px;
 
 					.description{
-					padding-right: 0;
-						ol{
-							background-color: red;
+						padding-right: 0;
+
+						h4{
+							margin: 5px 0 0 0;
+						}
+
+						ul{
+							list-style: none;
 							width: 100%;
-							height: 158px;
+							height: 120px;
 							margin: 0px;
 							margin-right: -10px;
-							padding: 0;
-							overflow-y: scroll;
+							padding: 0 5px;
+							overflow-y: auto;
 
 							li{
+								display: block;
 								height: 0px;
-								width: 100px;
 								background-color: transparent;
 								font-size: 12px;
-								margin: 0;
-								padding: 0;
+								//padding-bottom: 1px;
+								font-weight: bold;
+								//letter-spacing: .5px;
+								text-align: left;
+								margin-bottom: 5px;
+
+								&::before{
+									content: "\25CF";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  									color: #888; /* Change the color */
+  									//font-weight: bolder; /* If you want it to be bold */
+  									display: inline-block; /* Needed to add space between the bullet and the text */ 
+  									width: 1em; /* Also needed for space (tweak if needed) */
+ 									margin-left: -8px; /* Also needed for space (tweak if needed) */
+								}
 							}
 
 							&::-webkit-scrollbar{
-								width: 7px;
+								width: 5px;
 							}
-
+							
 							&::-webkit-scrollbar-thumb{
-								background-color: #ccc;
+								background: #888;
 							}
-
+							
 							&::-webkit-scrollbar-track{
-								background-color: #eee;
+								border-radius: 5px;
 							}
-
 						}
 					}
 
-					.logoContainer{
+					.applyBtn-jobPanel{
+						position: relative;
+						bottom: 25px;
+						float: right;
+						padding-top: 7px;
 
-						img{
-							width: 100%;
+						button{
+							height: 30px;
+							width: 100px;
+							border-radius: 3px;
+							border: none;
+							
+							transition: background .2s; 
+
+							&:hover{
+								background: #eee;
+							}
 						}
 					}
+
+					
 				}
 
 			}

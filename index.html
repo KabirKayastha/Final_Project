@@ -5,6 +5,7 @@
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-16">
 	
 <link rel="stylesheet" href="stylesheets/bootstrap/bootstrap.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -445,7 +446,7 @@
 				<!-- recent-content -->
 				<div class="jobPanel-content">
 					<div class="elements recent">
-						<ol>
+						<ul>
 							<div class="row">
 								<div class="col-md-1">
 									<li>lorem</li>
@@ -520,7 +521,7 @@
 								</div>
 
 							</div>
-						</ol>
+						</ul>
 					</div>
 
 					<!-- prev-next-buttons -->
@@ -546,17 +547,21 @@
 				<div class="jobPanel-content" id="Admin-Content">
 					<div class="sidenav-Admin">
 						<ul>
-
+						
 						<li>
-							<button id="AllAdmin" onclick="showRecentJob()"> Reception </button>
+							<button id="AllAdmin" onclick="showAll()"> All </button>
 						</li>
 
 						<li>
-							<button id="AllEngineer" onclick="showRecentJob()"> Management </button>
+							<button id="Reception" onclick="showReception()"> Reception </button>
 						</li>
 
 						<li>
-							<button id="AllMedical" onclick="showRecentJob()"> Administration </button>
+							<button id="Management" onclick="showManagemnt()"> Management </button>
+						</li>
+
+						<li>
+							<button id="Administration" onclick="showAdministration()"> Administration </button>
 						</li>
 						
 					<!--
@@ -582,33 +587,73 @@
 
 
 					<div class="elements withSideBtn">
-						<ol>
+						<ul>
 							<div class="row">
 								<div class="col-md-1">
-									<li>
-										<div class="row">
-											<div class="col-md-7 description">
-												<ol>
-													<li>Qualification....</li>
-													<li>asd</li>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi doloremque error vitae cumque excepturi quia iste quo possimus perferendis adipisci.
-												</ol> 											
+									<li class="Reception">
+										
+											<div class="description">
+												<h4>Company</h4>
+												<ul>
+													<li>Receptionist</li>
+													<li>Qualification</li>
+													<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aperiam!</li>
+												</ul> 											
 											</div>
 
-											<div class="col-md-5 logoContainer">
-												<img src="img/gradient.jpg" alt="logo">
+											<div class="applyBtn-jobPanel">
+												<button>Read More</button>
 											</div>
-
-										</div>
 									</li>
 
-									<li>lorem</li>
-																		
+									<li class="Administration">									
+											<div class="description">
+												<h4>Company</h4>
+												<ul>
+													<li>Administrator</li>
+													<li>Qualification</li>
+													<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aperiam!</li>
+												</ul> 											
+											</div>
+
+											<div class="applyBtn-jobPanel">
+												<button>Read More</button>
+											</div>
+									</li>																	
 								</div>
 
 								<div class="col-md-1">
-									<li>lorem</li>
-									<li>lorem</li>
+									<li class="Management">
+										
+											<div class="description">
+												<h4>Company</h4>
+												<ul>
+													<li>Manager</li>
+													<li>Qualification</li>
+													<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aperiam!</li>
+												</ul> 											
+											</div>
+
+											<div class="applyBtn-jobPanel">
+												<button>Read More</button>
+											</div>
+									</li>
+
+									<li class="Reception">
+										
+											<div class="description">
+												<h4>Company</h4>
+												<ul>
+													<li>Receptionist</li>
+													<li>Qualification</li>
+													<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aperiam!</li>
+												</ul> 											
+											</div>
+
+											<div class="applyBtn-jobPanel">
+												<button>Read More</button>
+											</div>
+									</li>
 								</div>
 
 								<div class="col-md-1">
@@ -662,7 +707,7 @@
 								</div>
 
 							</div>
-						</ol>
+						</ul>
 					</div>
 					
 					<!-- prev-next-buttons -->
@@ -941,6 +986,7 @@
 <script type="text/javascript" src="js/_newsSlider.js"></script>
 <script type="text/javascript" src="js/_jobPanel.js"></script>
 <script type="text/javascript" src="js/_jobPanel-tab.js"></script>
+<script type="text/javascript" src="js/_jobPanel-toggle.js"></script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
