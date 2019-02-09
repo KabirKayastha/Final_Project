@@ -17,5 +17,5 @@ function showJobPanel(panelIndex,backgroundColor,borderBottomColor) {
 	tabJobPanels[panelIndex].style.display="block";
 }
 
-showJobPanel(1,'#bbb','orange');
+showJobPanel(0,'#bbb','#888');
 
