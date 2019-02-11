@@ -131,6 +131,7 @@
 					padding: 6px 10px;
 					//margin-bottom: 20px;
 					border-radius: 5px;
+					box-shadow: 0 0 15px 0px #AdAbAa;
 
 					.description{
 						padding-right: 0;
@@ -159,6 +160,7 @@
 								//letter-spacing: .5px;
 								text-align: left;
 								margin-bottom: 5px;
+								box-shadow: none;
 
 								&::before{
 									content: "\25CF";  /* Add content: \2022 is the CSS Code/unicode for a bullet */

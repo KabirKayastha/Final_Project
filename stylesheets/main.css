@@ -1007,16 +1007,17 @@ span.search-tab .searchPanel select {
   background-color: #aaa;
   padding: 6px 10px;
   border-radius: 5px;
+  box-shadow: 0 0 15px 0px #AdAbAa;
 }
-/* line 135, ../sass/modules/_jobPanel.scss */
+/* line 136, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description {
   padding-right: 0;
 }
-/* line 138, ../sass/modules/_jobPanel.scss */
+/* line 139, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description h4 {
   margin: 5px 0 0 0;
 }
-/* line 142, ../sass/modules/_jobPanel.scss */
+/* line 143, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description ul {
   display: inline;
   list-style: none;
@@ -1027,7 +1028,7 @@ span.search-tab .searchPanel select {
   padding: 0 5px;
   overflow-y: auto;
 }
-/* line 152, ../sass/modules/_jobPanel.scss */
+/* line 153, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description ul li {
   display: block;
   height: 0px;
@@ -1036,8 +1037,9 @@ span.search-tab .searchPanel select {
   font-weight: bold;
   text-align: left;
   margin-bottom: 5px;
+  box-shadow: none;
 }
-/* line 163, ../sass/modules/_jobPanel.scss */
+/* line 165, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description ul li::before {
   content: "\25CF";
   /* Add content: \2022 is the CSS Code/unicode for a bullet */
@@ -1050,26 +1052,26 @@ span.search-tab .searchPanel select {
   margin-left: -8px;
   /* Also needed for space (tweak if needed) */
 }
-/* line 173, ../sass/modules/_jobPanel.scss */
+/* line 175, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description ul::-webkit-scrollbar {
   width: 5px;
 }
-/* line 177, ../sass/modules/_jobPanel.scss */
+/* line 179, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description ul::-webkit-scrollbar-thumb {
   background: #888;
 }
-/* line 181, ../sass/modules/_jobPanel.scss */
+/* line 183, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .description ul::-webkit-scrollbar-track {
   border-radius: 5px;
 }
-/* line 187, ../sass/modules/_jobPanel.scss */
+/* line 189, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .applyBtn-jobPanel {
   position: relative;
   bottom: -20px;
   float: right;
   padding-top: 7px;
 }
-/* line 193, ../sass/modules/_jobPanel.scss */
+/* line 195, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .applyBtn-jobPanel button {
   height: 30px;
   width: 100px;
@@ -1077,26 +1079,26 @@ span.search-tab .searchPanel select {
   border: none;
   transition: background .2s;
 }
-/* line 201, ../sass/modules/_jobPanel.scss */
+/* line 203, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements ul li .applyBtn-jobPanel button:hover {
   background: #eee;
 }
-/* line 212, ../sass/modules/_jobPanel.scss */
+/* line 214, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .elements::-webkit-scrollbar {
   width: 8px;
 }
-/* line 217, ../sass/modules/_jobPanel.scss */
+/* line 219, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .withSideBtn {
   width: 85%;
 }
-/* line 221, ../sass/modules/_jobPanel.scss */
+/* line 223, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel {
   float: right;
   width: 85%;
   position: relative;
   bottom: 30px;
 }
-/* line 227, ../sass/modules/_jobPanel.scss */
+/* line 229, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel button {
   margin: 0;
   width: 50%;
@@ -1107,16 +1109,16 @@ span.search-tab .searchPanel select {
   border: none;
   transition: background .3s;
 }
-/* line 239, ../sass/modules/_jobPanel.scss */
+/* line 241, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-left, .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-right {
   transition-property: background;
   transition-duration: .5s;
 }
-/* line 243, ../sass/modules/_jobPanel.scss */
+/* line 245, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-left:hover, .jobPanel .jobPanel-content .slideBtn-JobPanel .panel-right:hover {
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), transparent);
 }
-/* line 249, ../sass/modules/_jobPanel.scss */
+/* line 251, ../sass/modules/_jobPanel.scss */
 .jobPanel .jobPanel-content .withoutSideBtn {
   width: 100%;
 }

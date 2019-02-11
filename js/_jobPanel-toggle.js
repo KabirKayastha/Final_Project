@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 //sidemenu job toggling
 
 	//Admin
